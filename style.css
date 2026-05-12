@@ -12,7 +12,9 @@
  }
 
 
-
+.section-spacing {
+  margin: 4rem 0;
+}
  .navbar-custom {
      background-color: #4a0160cc !important;
  }
