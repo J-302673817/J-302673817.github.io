@@ -12,9 +12,10 @@
  }
 
 
-.section-spacing {
-  margin: 4rem 0;
-}
+ .section-spacing {
+     margin: 4rem 0;
+ }
+
  .navbar-custom {
      background-color: #4a0160cc !important;
  }
@@ -210,25 +211,25 @@
      color: #E4C8FE;
  }
 
- 
-    .contact-footer a:link {
-        color: #E4C8FE;
-        text-decoration: none;
-    }
-    
-    .contact-footer a:visited {
-        color: #ba99fc;
-        text-decoration: none;
-    }
-    
-    .contact-footer a:hover {
-        color: #c4a8fe;
-        text-decoration: underline;
-    }
-    
-    .contact-footer a:active {
-        color: #E4C8FE;
-    }
+
+ .contact-footer a:link {
+     color: #E4C8FE;
+     text-decoration: none;
+ }
+
+ .contact-footer a:visited {
+     color: #ba99fc;
+     text-decoration: none;
+ }
+
+ .contact-footer a:hover {
+     color: #c4a8fe;
+     text-decoration: underline;
+ }
+
+ .contact-footer a:active {
+     color: #E4C8FE;
+ }
 
 
  .contact-icon {
