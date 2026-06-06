@@ -186,8 +186,10 @@
                                 <span class="tech-tag-slider">PHP</span>
                                 <span class="tech-tag-slider">Bootstrap</span>
                             </div>
-                            <p class="desc-slider">A simple collection management website built with PHP and Bootstrap.</p>
-                            <a href="https://github.com/ROCMondriaanTIN/sd25-p03-proj-mon-in-jessika-iliyana" target="_blank" class="btn-slider-custom"><i class="fab fa-github me-1"></i> GitHub</a>
+                            <p class="desc-slider">A simple collection management website built with PHP and Bootstrap.
+                            </p>
+                            <a href="https://github.com/ROCMondriaanTIN/sd25-p03-proj-mon-in-jessika-iliyana"
+                                target="_blank" class="btn-slider-custom"><i class="fab fa-github me-1"></i> GitHub</a>
                             <a href="#" target="_blank" class="btn-slider-custom">
                                 <i class="fab me-1"></i> No live link available because of XAMPP
                             </a>
@@ -290,131 +292,127 @@
         <br><br>
         <div class="contact-footer">
             <h2 class="section-title mb-4 fs-2">Contacts</h2>
-            <div class="row justify-content-center">
-                <div class="col-md-4 contact-item mb-4">
-                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+
+            <div class="row g-4">
+                <div class="col-sm-6 col-md-4 contact-item">
                     <h5>Email</h5>
                     <p>jessika.wieczorek02@gmail.com</p>
                 </div>
-                <div class="col-md-4 contact-item mb-4">
-                    <div class="contact-icon"><i class="fab fa-github"></i></div>
+                <div class="col-sm-6 col-md-4 contact-item">
                     <h5>GitHub</h5>
                     <a href="https://github.com/J-302673817" target="_blank">Github.com/J-302673817</a>
                 </div>
-                <div class="col-md-4 contact-item mb-4">
-                    <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                <div class="col-sm-6 col-md-4 contact-item">
                     <h5>WhatsApp</h5>
                     <p>0653146077</p>
                 </div>
             </div>
-
         </div>
-    </div>
+        <br><br><br><br><br><br><br>
+        <div class="container" id="about-portfolio"></div>
+        <section class="container my-5">
+            <div class="about-profile">
+                <div class=" p-4 " style="color: #d3a7fd;">
+                    <h2 class="section-title">About this portfolio website</h2>
+                    <p>This portfolio is built with HTML5, CSS, JavaScript and Bootstrap 5.</p>
+                    <h4>Color Schema</h4>
+                    <div class="d-flex gap-2">
+                        <div style="background:#4a0160; width:50px; height:50px;"></div>
+                        <div style="background:#d3a7fd; width:50px; height:50px;"></div>
+                        <div style="background:#e4c8fe; width:50px; height:50px;"></div>
+                    </div>
 
-    <br><br><br><br><br><br><br>
-    <div class="container" id="about-portfolio"></div>
-    <section class="container my-5">
-        <div class="about-profile">
-            <div class=" p-4 " style="color: #d3a7fd;">
-                <h2 class="section-title">Over deze portfolio website</h2>
-                <p>Deze portfolio is gebouwd met HTML5, CSS, JavaScript en Bootstrap 5.</p>
-                <h4>Kleurenschema</h4>
-                <div class="d-flex gap-2">
-                    <div style="background:#4a0160; width:50px; height:50px;"></div>
-                    <div style="background:#d3a7fd; width:50px; height:50px;"></div>
-                    <div style="background:#e4c8fe; width:50px; height:50px;"></div>
+
+                    <h4>Design Styles:</h4>
+                    <ul style="color:#d3a7fd;">
+                        <li><strong>Dark Mode Aesthetic</strong> - Deep purple tones with soft contrast</li>
+                        <li><strong>Soft Glassmorphism</strong> - Transparent elements with subtle borders</li>
+                        <li><strong>Mystical Tech</strong> - Combining dark themes with ethereal purple accents</li>
+                        <li><strong>Neumorphism-light</strong> - Soft shadows and rounded elements without harsh edges
+                        </li>
+                    </ul>
+
+                    <h4>Visual References:</h4>
+                    <p>Witchy UI, Dreamcore aesthetic, Purple haze style, Ethereal dark mode</p>
+
+                    <h4>Sitemap</h4>
+                    <p>Home → About → Projects → Skills → Contact → Over deze portfolio</p>
                 </div>
-
-
-                <h4>Design Styles:</h4>
-                <ul style="color:#d3a7fd;">
-                    <li><strong>Dark Mode Aesthetic</strong> - Deep purple tones with soft contrast</li>
-                    <li><strong>Soft Glassmorphism</strong> - Transparent elements with subtle borders</li>
-                    <li><strong>Mystical Tech</strong> - Combining dark themes with ethereal purple accents</li>
-                    <li><strong>Neumorphism-light</strong> - Soft shadows and rounded elements without harsh edges</li>
-                </ul>
-
-                <h4>Visual References:</h4>
-                <p>Witchy UI, Dreamcore aesthetic, Purple haze style, Ethereal dark mode</p>
-
-                <h4>Sitemap</h4>
-                <p>Home → About → Projects → Skills → Contact → Over deze portfolio</p>
             </div>
-        </div>
-        <footer class="mt-4 text-center">
-            <p>&copy; 2026 Jessika. All rights reserved. | ROC Mondriaan Software Developer Student</p>
-        </footer>
-    </section>
+            <footer class="mt-4 text-center">
+                <p>&copy; 2026 Jessika. All rights reserved. | ROC Mondriaan Software Developer Student</p>
+            </footer>
+        </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-        const projectSwiper = new Swiper('.projectSwiper', {
-            slidesPerView: 1,
-            spaceBetween: 24,
-            loop: true,
-            autoplay: {
-                delay: 4500,
-                disableOnInteraction: false,
-                pauseOnMouseEnter: true,
-            },
-            pagination: {
-                el: '.projectSwiper .swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.projectSwiper .swiper-button-next',
-                prevEl: '.projectSwiper .swiper-button-prev',
-            },
-            breakpoints: {
-                640: { slidesPerView: 1, spaceBetween: 20 },
-                768: { slidesPerView: 2, spaceBetween: 25 },
-                1024: { slidesPerView: 3, spaceBetween: 30 },
-            },
-            grabCursor: true,
-            speed: 700,
-        });
-
-        const skillsSwiper = new Swiper('.skillsSwiper', {
-            slidesPerView: 1,
-            spaceBetween: 24,
-            loop: true,
-            autoplay: {
-                delay: 4000,
-                disableOnInteraction: false,
-                pauseOnMouseEnter: true,
-            },
-            pagination: {
-                el: '.skillsSwiper .swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.skillsSwiper .swiper-button-next',
-                prevEl: '.skillsSwiper .swiper-button-prev',
-            },
-            breakpoints: {
-                640: { slidesPerView: 1, spaceBetween: 20 },
-                768: { slidesPerView: 2, spaceBetween: 25 },
-                1024: { slidesPerView: 3, spaceBetween: 30 },
-            },
-            grabCursor: true,
-        });
-
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                const href = this.getAttribute('href');
-                if (href === "#" || href === "") return;
-                const targetElement = document.querySelector(href);
-                if (targetElement) {
-                    e.preventDefault();
-                    targetElement.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            const projectSwiper = new Swiper('.projectSwiper', {
+                slidesPerView: 1,
+                spaceBetween: 24,
+                loop: true,
+                autoplay: {
+                    delay: 4500,
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: true,
+                },
+                pagination: {
+                    el: '.projectSwiper .swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.projectSwiper .swiper-button-next',
+                    prevEl: '.projectSwiper .swiper-button-prev',
+                },
+                breakpoints: {
+                    640: { slidesPerView: 1, spaceBetween: 20 },
+                    768: { slidesPerView: 2, spaceBetween: 25 },
+                    1024: { slidesPerView: 3, spaceBetween: 30 },
+                },
+                grabCursor: true,
+                speed: 700,
             });
-        });
-    </script>
+
+            const skillsSwiper = new Swiper('.skillsSwiper', {
+                slidesPerView: 1,
+                spaceBetween: 24,
+                loop: true,
+                autoplay: {
+                    delay: 4000,
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: true,
+                },
+                pagination: {
+                    el: '.skillsSwiper .swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.skillsSwiper .swiper-button-next',
+                    prevEl: '.skillsSwiper .swiper-button-prev',
+                },
+                breakpoints: {
+                    640: { slidesPerView: 1, spaceBetween: 20 },
+                    768: { slidesPerView: 2, spaceBetween: 25 },
+                    1024: { slidesPerView: 3, spaceBetween: 30 },
+                },
+                grabCursor: true,
+            });
+
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    const href = this.getAttribute('href');
+                    if (href === "#" || href === "") return;
+                    const targetElement = document.querySelector(href);
+                    if (targetElement) {
+                        e.preventDefault();
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        </script>
 </body>
 
 </html>
