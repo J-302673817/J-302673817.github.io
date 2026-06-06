@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Start screen quiz</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Outfit:wght@100..900&family=Pixelify+Sans:wght@400..700&family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        font-family: "Outfit", sans-serif;
+      }
+      .startIndex {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-image: url(imgs/gameItems/cooleBgPikka.png);
+        background-color: #020202a5;
+        background-blend-mode: color-dodge;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .startIndex > h1 {
+        background-color: #2a221b;
+        font-size: 6em;
+        color: #eec332;
+        padding: 25px;
+        text-wrap: nowrap;
+
+        border-radius: 20px;
+      }
+      .startIndex > p {
+        color: #eec332;
+
+        margin-top: -30px;
+      }
+      .startIndex > a > button {
+        margin-top: 100px;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 10px;
+        font-size: 2.5em;
+        background-color: #ffebc6;
+        cursor: pointer;
+        transition: 0.3s ease;
+        box-shadow: 0 4px 8px 0 rgba(99, 97, 72, 0.3);
+      }
+      .startIndex > a > button:hover {
+        scale: 1.1;
+      }
+      @media only screen and (max-width: 767px) {
+        .startIndex > h1 {
+          transform: scale(0.35);
+          padding: 30px;
+        }
+        .startIndex > p {
+          font-size: 9px;
+          transform: translateY(-45px);
+        }
+        .startIndex > a > button {
+          font-size: 20px;
+          transform: translateY(-95px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="startIndex">
+      <h1>Welcome to our gamehall!</h1>
+      <p>Made by The Midnight Coders&copy;</p>
+      <a href="home.html"><button>Continue</button></a>
+    </div>
+  </body>
+</html>

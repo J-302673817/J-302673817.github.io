@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Game Maker's Realm</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+ <div id="game-container">
+
+        <!-- START SCREEN -->
+        <div id="start-screen" class="screen active">
+            <div class="pixel-border title-container">
+                <h1 class="pixel-text glitch-text">THE GAME MAKER'S REALM</h1>
+                <p class="subtitle">A Text-Based RPG Adventure</p>
+            </div>
+
+            <div class="pixel-border name-input-container">
+                <h2>ENTER DEVELOPER NAME</h2>
+                <div class="input-group">
+                    <input type="text" id="player-name-input" maxlength="20" placeholder="TYPE YOUR NAME..."
+                        class="pixel-input">
+                </div>
+                <button id="start-game-btn" class="pixel-btn" disabled>
+                    INITIALIZE GAME
+                </button>
+            </div>
+
+            <div class="pixel-border debug-info">
+                <h3>SYSTEM STATUS</h3>
+                <div class="status-line">> Game Engine: ONLINE</div>
+                <div class="status-line">> Reality Matrix: STABLE</div>
+                <div class="status-line">> Debug Access: PENDING</div>
+            </div>
+        </div>
+
+        <!-- CHARACTER CREATION SCREEN -->
+        <div id="character-screen" class="screen">
+            <div class="pixel-border title-container">
+                <h1 class="pixel-text">CHARACTER CREATION</h1>
+                <div class="player-name-display" id="name-display"></div>
+            </div>
+
+            <div class="creation-grid">
+                <div class="pixel-border class-selection">
+                    <h2>SELECT CLASS</h2>
+                    <div class="class-options">
+                        <div class="class-option active" data-class="code-mage">
+                            <h3>CODE MAGE</h3>
+                            <div class="class-stats">
+                                <span>MK: ██████████</span>
+                                <span>HP: ████░░░░░░</span>
+                            </div>
+                            <p>Master of game code manipulation</p>
+                        </div>
+
+                        <div class="class-option" data-class="reality-bender">
+                            <h3>REALITY BENDER</h3>
+                            <div class="class-stats">
+                                <span>MK: ██████░░░░</span>
+                                <span>HP: ██████░░░░</span>
+                            </div>
+                            <p>Specialist in glitch exploitation</p>
+                        </div>
+
+                        <div class="class-option" data-class="lore-master">
+                            <h3>LORE MASTER</h3>
+                            <div class="class-stats">
+                                <span>MK: █████░░░░░</span>
+                                <span>HP: ███████░░░</span>
+                            </div>
+                            <p>Expert in game world knowledge</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pixel-border class-details">
+                    <h2>CLASS DETAILS</h2>
+                    <div id="class-description">
+                        <h3>CODE MAGE</h3>
+                        <p>> Can manipulate game code directly</p>
+                        <p>> Access to debug commands</p>
+                        <p>> Weak in physical combat</p>
+                        <p>> High Meta-Knowledge growth</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="creation-actions">
+                <button id="confirm-character" class="pixel-btn">
+                    CONFIRM CHARACTER
+                </button>
+                <button id="back-to-name" class="pixel-btn secondary">
+                    CHANGE NAME
+                </button>
+            </div>
+        </div>
+
+        <!-- MAIN GAME SCREEN -->
+        <div id="game-screen" class="screen">
+            <div class="pixel-border game-header">
+                <h1>THE GAME MAKER'S REALM</h1>
+                <div class="player-info">
+                    <span id="display-player-name" class="player-tag"></span>
+                    <span id="display-player-class" class="class-tag"></span>
+                </div>
+            </div>
+
+            <div id="story-section" class="pixel-border story-container">
+                <div id="story-text" class="story-text">
+                    Loading game world...
+                </div>
+            </div>
+
+            <div class="stats-container">
+                <div class="pixel-border player-stats">
+                    <h3>PLAYER INFO</h3>
+                    <div class="stat-row">
+                        <span>HEALTH:</span>
+                        <div class="pixel-bar">
+                            <div id="health-bar" class="pixel-bar-fill" style="width: 100%"></div>
+                        </div>
+                        <span id="health-text">100/100</span>
+                    </div>
+                    <div class="stat-row">
+                        <span>META-KNOWLEDGE:</span>
+                        <div class="pixel-bar">
+                            <div id="meta-bar" class="pixel-bar-fill" style="width: 0%"></div>
+                        </div>
+                        <span id="meta-text">0/100</span>
+                    </div>
+                    <div class="stat-row">
+                        <span>LEVEL:</span>
+                        <span id="level-text">1</span>
+                    </div>
+                </div>
+
+                <div class="pixel-border debug-panel">
+                    <h3>DEBUG COMMANDS</h3>
+                    <div class="debug-commands">
+                        <button class="debug-btn" data-command="save">SAVE_GAME</button>
+                        <button class="debug-btn" data-command="load">LOAD_GAME</button>
+                        <button class="debug-btn" data-command="stats">SHOW_FULLPLAYERINFO</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="choices-section" class="pixel-border choices-container">
+                <h3>AVAILABLE ACTIONS</h3>
+                <div id="choices-buttons" class="choices-grid">
+                </div>
+            </div>
+
+            <div id="combat-log" class="pixel-border combat-container hidden">
+                <h3>COMBAT LOG</h3>
+                <div id="combat-messages"></div>
+            </div>
+        </div>
+    </div>
+
+<script src="game.js"></script> 
+    
+</body>
+
+</html>

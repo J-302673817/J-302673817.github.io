@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style-nicolle.css" />
+    <!-- font style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Outfit:wght@100..900&family=Pixelify+Sans:wght@400..700&family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=close"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_back"
+    />
+    
+    <title>Quiz</title>
+  </head>
+  <body>
+    <!-- start screen html -->
+    <div id="startScreen" class="startScreen">
+      <a href="home.html" style="text-decoration: none; color: black;">
+      <span id="goToHome" class="material-symbols-outlined" >arrow_back<p>Terug</p></span>
+      </a>
+      <h1 class="startscreenItems">Automovive quiz</h1>
+      <button id="startTheQuiz" class="startscreenItems">Start!</button>
+    </div>
+
+    <!-- quiz screen html -->
+     <div class="pop-upAlert" id="popUp" hidden>
+      <div class="pop-upContain">
+        <h3>Welcome to the quiz!</h3>
+        <p>Answer 20 questions and try to score 10 or more points to win.
+        Use the 50/50 power-up to remove two wrong answers.
+        Ready? Let’s begin!</p>
+        <h2 id="cancel">Play!</h2>
+      </div>
+     </div>
+    <div id="quiz" class="quiz" hidden blurActive>
+      <header class="nicolle-quizheader">
+        <h1 id="quizTitle">Automotive quiz</h1>
+        <h2 id="score">score: 0/20</h2>
+      </header>
+      <main>
+        <section class="extraBtns">
+          <span id="closeQuiz" class="material-symbols-outlined">
+            <img
+              src="imgs/close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"
+              alt=""
+            />
+          </span>
+          <button id="powerUp">50/50</button>
+          <div id="powerInfo" class="powerInfo">
+            <p>You can use this feature 3x</p>
+          </div>
+          <!-- !<h2 id="shuffleQuestions">Shuffle</h2> -->
+        </section>
+        <section class="questionsAppear">
+          <div class="questions">
+            <p id="questionShow"></p>
+          </div>
+        </section>
+        <section class="answers">
+          <ul class="answerColumn1">
+            <li class="answersShow" id="ans1"></li>
+            <li class="answersShow" id="ans2"></li>
+          </ul>
+          <ul class="answerColumn2">
+            <li class="answersShow" id="ans3"></li>
+            <li class="answersShow" id="ans4"></li>
+          </ul>
+          <div class="buttons">
+            <h2 id="nextBtn" notClickable>Next question</h2>
+          </div>
+        </section>
+      </main>
+    </div>
+    </div>
+    <!-- feedback screen html (winning) -->
+    <div id="win" class="feedbackScreen" >
+      <img id="carSticker" src="imgs/carSticker.png" alt="">
+      <h1>Congratulations!</h1>
+      <h3>You now earn a cool car sticker</h3>
+      <h2 class="finalScore">Your score: </h2>
+      <div class="buttons">
+      <h2 class="rettryBtn">Retry <img src="imgs/replay_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt=""></h2>
+      <a href="home.html" style="text-decoration: none; color: black;">
+        <h2 class="homeBtn">Home</h2>
+      </a>
+      </div>
+    </div>
+    <!-- feedback screen html (lose) -->
+    <div id="lose" class="feedbackScreen"  >
+      <h1>Good effort!</h1>
+      <h3>Better luck next time</h3>
+      <h2 class="finalScore">Your score: </h2>
+      <div class="buttons">
+       <h2 class="rettryBtn">Retry <img src="imgs/replay_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt=""></h2>
+       <a href="home.html" style="text-decoration: none; color: black;">
+        <h2 class="homeBtn">Home</h2>
+      </a>
+      </div>
+    </div>
+    <script src="script-nicolle.js"></script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+*{
+  background-color: #f9d797;  
+  margin-top: 30px;
+}
+
+h1,p,nav{
+    color:rgb(0, 0, 0);
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    font-variant-caps: all-petite-caps;
+}
+
+button{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+    font-variant-caps: all-petite-caps;
+    border-radius: 5px;
+    background-color: #dd7499;
+}
+

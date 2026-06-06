@@ -1,0 +1,18 @@
+Easter Eggs & Hidden Interactions
+------------------------------------
+
+1. The Legacy Crow
+In the Legacy menu, a tiny crow is perched quietly… until you click on it.
+Give it a tap and it will let out a soft crow, acknowledging your discovery.
+
+2. Developer Trigger # White Victory Screen
+Clicking 7x on the White King crow instantly triggers the White team’s winning screen.
+This feature was originally made for testing and demonstrating the features in the game for the school project.
+
+3. Developer Trigger # Black Victory Screen
+The Black King crow works the same way, one click launches the Black team’s victory ending.
+
+4.Secret Lore 
+Inside the Legacy section, one sentence hides a secret.
+Hover over the final line and the website will reveal a deeper story
+a hidden tale that expands the world behind Murder’s Gambit.

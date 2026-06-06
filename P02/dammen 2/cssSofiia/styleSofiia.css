@@ -1,0 +1,157 @@
+body{
+    background-image: url(../imgSofiia/sharedImage.jpg);
+    background-size:cover;
+}
+h1{
+    background-color: rgb(80, 3, 3);
+    width: 250px;
+    height: 80px;
+    border-radius: 5px;
+    border: 1.5px solid black;
+    text-align: center;
+    margin-left: 50px;
+    font-weight:bolder;
+    padding-top: 15px;
+}
+h1:hover{
+    background-color: rgba(174, 14, 14, 0.598);
+}
+.hoofdpagina{
+    border: 1px solid black;
+    border-radius: 15px;
+    width:360px;
+    height: 350px;
+    /* text-align:center; */
+    background-color: rgba(80, 3, 3, 0.92);
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+    margin-top: 50px;
+    margin-right: 140px;
+}
+.button{
+    background-color: rgba(61, 6, 6, 0.717);
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    font-size: 30px;
+    margin: 20px;
+    margin-left: 100px;
+    border: 1.5px solid black;
+    margin-top: 35px;
+}
+#spelBtn{
+    width: 150px;
+    height: 80px;
+}
+#rules-btn{
+    width: 150px;
+    height: 80px;
+}
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 150px;
+    position: relative;
+
+}
+.kies{
+    background-color: #520808c8;
+    width: 200px;
+    height: 200px;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    border-radius: 10px;
+    margin-left: -400px;
+    border: 1.5px solid black;
+    margin-top: 100px;
+}
+.kies-content{
+    height: 170px;
+}
+.wit, .zwart{
+    width: 100px;
+    height: 40px;
+    background-color: #5c0d0dc8;
+    border-radius: 7px;
+    border: 1.5px solid black;
+    font-weight: 600;
+    margin-left: 50px;
+}
+.modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.modal-content{
+    color: rgb(242, 158, 158);
+    background-color: #7c0000;
+    padding: 20px 30px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+.modal-content h2{
+    margin-bottom: 15px;
+}
+.close{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    cursor: pointer;
+}
+.button:hover{
+    color: rgba(174, 14, 14, 0.598);
+}
+.wit{
+    background-color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+    margin-top: 40px;
+    color: white;
+}
+.wit:hover{
+    color: red;
+}
+.zwart{
+    background-color:rgb(255, 255, 255);
+    margin-top: 10px;
+}
+.zwart:hover{
+    color: red;
+}
+.close-kies{
+    position: absolute;
+    font-size: 28px;
+    cursor: pointer;
+    margin-bottom: 160px;
+    margin-left: 170px;
+}
+.close-kies:hover{
+    color: white;
+}
+.close:hover{
+    color: white;
+}
+body{
+    background-color: rgba(127, 12, 12, 0.945);
+}
+.bI {
+    background-color: brown;
+    margin-right: 50px;
+    height: 30px;
+    font-size: 15px;
+    width: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}

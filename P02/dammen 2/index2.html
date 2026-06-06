@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cssSofiia/style2.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="a">
+            <a href="indexSofiia.html"><button class="button">Menu</button></a>
+        </div>
+
+        <div class="i">
+            <button class="bI">i</button>
+        </div>
+        <div id="info-modal" class="modal">
+            <div class="modal-content">
+                <span id="close-info" class="close">&times;</span>
+                <h2>Speluitleg / Info</h2>
+                <p>
+                    1.Je speelt alleen op de donkere vakjes. <br>
+                    2.Wit begint het spel. <br>
+                    3.Schijven bewegen één vak schuin naar voren. <br>
+                    4.Slaan is verplicht als het kan. <br>
+                    5.Bij meerdere slagen moet je een meerslag doen. <br>
+                    6.Een schijf die de overkant bereikt, wordt een dam. <br>
+                    7.Een dam mag naar voren en naar achteren bewegen en slaan. <br>
+                    8.Je wint als de tegenstander geen zetten meer kan doen. <br>
+                </p>
+            </div>
+        </div>
+        <div id="capture-effect">
+            <img src="imgSofiia/scary.png" alt="capture">
+        </div>
+        <div class="cont">
+            <div class="deel1">
+                <img src="imgSofiia/board5.jpg" alt="" class="img">
+                <div id="board-wrapper">
+                    <div class="board">
+                        <div class="square">
+                            <div class="piece black"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="deel2">
+                <div class="game-status"></div>
+                <div class="tellers">
+                    <p class="scoreB">Black: </p>
+                    <p class="scoreW">White: </p>
+                </div>
+                <button class="restart-btn">Restart</button><br>
+                <button class="eenTerug"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                        width="24px" fill="#e3e3e3">
+                        <path
+                            d="M396-200q-97 0-166.5-63T160-420q0-94 69.5-157T396-640h252L544-744l56-56 200 200-200 200-56-56 104-104H396q-63 0-109.5 40T240-420q0 60 46.5 100T396-280h284v80H396Z" />
+                    </svg></button>
+                <button class="redo-btn"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                        width="24px" fill="#e3e3e3">
+                        <path
+                            d="M396-200q-97 0-166.5-63T160-420q0-94 69.5-157T396-640h252L544-744l56-56 200 200-200 200-56-56 104-104H396q-63 0-109.5 40T240-420q0 60 46.5 100T396-280h284v80H396Z" />
+                    </svg></button>
+            </div>
+        </div>
+        <div class="eindScherm">
+            <div class="result">
+                <h2 class="h2"></h2>
+            </div>
+            <div class="nog">
+                <p class="p"></p>
+            </div>
+        </div>
+    </div>
+    <footer></footer>
+    <script src="scriptSofiia.js"></script>
+</body>
+
+</html>

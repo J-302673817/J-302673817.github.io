@@ -1,0 +1,517 @@
+{
+  "jessica": [
+  {
+    "question": "Which Cookie is the first playable character you receive at the start of the game?",
+    "options": ["GingerBrave", "Stardust", "Kiwi", "Donut"],
+    "answer": "GingerBrave"
+  },
+  {
+    "question": "Who owns Cookie run: Kingdom?",
+    "options": ["Devsisters", "Cookie run", "TevBlock", "Remba"],
+    "answer": "Devsisters"
+  },
+  {
+    "question": "When did the game come out?",
+    "options": ["January 2021", "October 2007", "September 2024", "April 2003"],
+    "answer": "January 2021"
+  },
+  {
+    "question": "What type of Cookie is GingerBrave?",
+    "options": ["Bomber", "Defense", "Support", "Magic"],
+    "answer": "Bomber"
+  },
+  {
+    "question": "How many versions of the game are there?",
+    "options": ["2", "1", "4", "6"],
+    "answer": "2"
+  },
+  {
+    "question": "If there is a different version of the game then what is it?",
+    "options": ["Cookie run: Kingdom CN", "There is no other version", "Cookie run: Kingdom NK", "There is just the global one"],
+    "answer": "Cookie run: Kingdom CN"
+  },
+  {
+    "question": "What is the other company?",
+    "options": ["Tencent Games (China)", "There is no other company", "Mizaki", "Climana"],
+    "answer": "Tencent Games (China)"
+  },
+  {
+    "question": "How many cookie types are there?",
+    "options": ["4", "12", "8", "16"],
+    "answer": "4"
+  },
+  {
+    "question": "What element would a cookie like Pure Vanilla be?",
+    "options": ["Light", "Darkness", "Water", "Lighting"],
+    "answer": "Light"
+  },
+  {
+    "question": "How many episodes are there?",
+    "options": [
+      "18 episodes of Crispia and 10 episodes of Beast-Yeast, totaling 28.",
+      "12 episodes of Crispia and 14 episodes of Beast-Yeast, totaling 26.",
+      "20 episodes of Crispia and 12 episodes of Beast-Yeast, totaling 32.",
+      "35 episodes of Crispia and 18 episodes of Beast-Yeast, totaling 53."
+    ],
+    "answer": "18 episodes of Crispia and 10 episodes of Beast-Yeast, totaling 28."
+  },
+  {
+    "question": "What would be the name of this cookie? (picture of Shadow milk cookie)",
+    "options": ["Shadow milk cookie", "Blue Jester", "Corruptor", "Deceit"],
+    "answer": "Shadow milk cookie"
+  },
+  {
+    "question": "Which are the names of the Ancient cookies?",
+    "options": [
+      "Pure Vanilla Cookie, Hollyberry Cookie, Dark Cacao Cookie, Golden Cheese Cookie, White Lily Cookie",
+      "Burning Spice Cookie,Eternal Sugar Cookie,Mystic Flour Cookie,Shadow Milk Cookie,Silent Salt Cookie",
+      "There are no Ancients",
+      "Butter cookie, Apple Cookie, Boba Cookie, Coral Cookie"
+    ],
+    "answer": "Pure Vanilla Cookie, Hollyberry Cookie, Dark Cacao Cookie, Golden Cheese Cookie, White Lily Cookie"
+  },
+  {
+    "question": "How many Beasts are there?",
+    "options": ["5", "6", "8", "2"],
+    "answer": "5"
+  },
+  {
+    "question": "Does Cookie run: Kingdom do April fools updates?",
+    "options": ["Yes, each year", "No", "Yes but only once every 2 years", "They only did it once"],
+    "answer": "Yes, each year"
+  },
+  {
+    "question": "What is the maximum number of Cookies you can deploy in a single team for most game modes?",
+    "options": ["5", "6", "4", "8"],
+    "answer": "5"
+  },
+  {
+    "question": "Aside from pulling them from the Gacha, what is the primary way to obtain a Cookie's Soulstones to unlock them?",
+    "options": ["The Mileage Shop", "Rewards", "Chests", "Buying with real money"],
+    "answer": "The Mileage Shop"
+  },
+  {
+    "question": "Which game mode allows you to set defensive teams and battle other players' teams for rewards?",
+    "options": ["Kingdom Arena", "Battle mode", "Guild battles", "PvP Colosseum"],
+    "answer": "Kingdom Arena"
+  },
+  {
+    "question": "How to make your cookies stronger?",
+    "options": ["Leveling Up, Upgrading Skills, Promotion, Ascension, Toppings, Treasures", "Level up building", "Buy more cookie dough", "Train them"],
+    "answer": "Leveling Up, Upgrading Skills, Promotion, Ascension, Toppings, Treasures"
+  },
+  {
+    "question": "How long do events usually last?",
+    "options": ["30 days", "26 days", "45 days", "15 days"],
+    "answer": "30 days"
+  },
+  {
+  "question": "Which Cookie is known as the leader of the Dark Enchantress’s army?",
+  "options": ["Licorice Cookie", "Dark Enchantress Cookie", "Pomegranate Cookie", "Espresso Cookie"],
+  "answer": "Dark Enchantress Cookie"
+}
+
+]
+,
+  "iliyana": [
+    {
+      "question": "What is the name of Joe’s first major love interest?",
+      "options": ["Beck", "Love", "Peach", "Candace"],
+      "answer": "Beck"
+    },
+    {
+      "question": "Where does Joe work in New York?",
+      "options": ["Library", "Coffee shop", "Bookstore", "Music store"],
+      "answer": "Bookstore"
+    },
+    {
+      "question": "Who is Beck’s wealthy best friend?",
+      "options": ["Delilah", "Love", "Karen", "Peach"],
+      "answer": "Peach"
+    },
+    {
+      "question": "What is the name of Joe’s young neighbor?",
+      "options": ["Theo", "Forty", "Paco", "Gabe"],
+      "answer": "Paco"
+    },
+    {
+      "question": "Who is Joe’s new love interest in Los Angeles?",
+      "options": ["Delilah", "Love Quinn", "Candace", "Ellie"],
+      "answer": "Love Quinn"
+    },
+    {
+      "question": "What alias does Joe use in season 2?",
+      "options": [
+        "Will Bettelheim",
+        "Jonathan Moore",
+        "Ben Ashby",
+        "David Fincher"
+      ],
+      "answer": "Will Bettelheim"
+    },
+    {
+      "question": "Who is Love’s twin brother?",
+      "options": ["Henry", "Theo", "Milo", "Forty"],
+      "answer": "Forty"
+    },
+    {
+      "question": "What is the name of Joe and Love’s baby?",
+      "options": ["Henry", "James", "Theo", "Lucas"],
+      "answer": "Henry"
+    },
+    {
+      "question": "Who is Joe’s new neighbor that he becomes obsessed with?",
+      "options": ["Sherry", "Nathalie", "Marienne", "Delilah"],
+      "answer": "Nathalie"
+    },
+    {
+      "question": "Who is the librarian that Joe falls for?",
+      "options": ["Ellie", "Love", "Marienne", "Karen"],
+      "answer": "Marienne"
+    },
+    {
+      "question": "Which hobby do Joe and Love take up together to appear normal?",
+      "options": ["Painting", "Beekeeping", "Gardening", "Baking"],
+      "answer": "Beekeeping"
+    },
+    {
+      "question": "Where does season 4 mainly take place?",
+      "options": ["Paris", "London", "Los Angeles", "Rome"],
+      "answer": "London"
+    },
+    {
+      "question": "What alias does Joe use in season 4?",
+      "options": [
+        "Will Bettelheim",
+        "Edward Hall",
+        "Patrick Reed",
+        "Jonathan Moore"
+      ],
+      "answer": "Jonathan Moore"
+    },
+    {
+      "question": "Which group of wealthy friends does Joe get involved with in London?",
+      "options": [
+        "The Rich Kids",
+        "The Eat The Rich Club",
+        "The Royal Circle",
+        "The Soho Crew"
+      ],
+      "answer": "The Eat The Rich Club"
+    },
+    {
+      "question": "Who turns out to be the real 'Eat The Rich' killer in season 4?",
+      "options": ["Joe", "Marienne", "Rhys Montrose", "Kate"],
+      "answer": "Rhys Montrose"
+    },
+    {
+      "question": "What is Joe’s favorite place to stalk his crush in season 1?",
+      "options": ["Coffee shop", "Bookstore", "Social media", "Library"],
+      "answer": "Bookstore"
+    },
+    {
+      "question": "Who is Joe’s ex-girlfriend that comes back unexpectedly in season 2?",
+      "options": ["Love Quinn", "Beck", "Candace", "Marienne"],
+      "answer": "Candace"
+    },
+    {
+      "question": "What alias does Joe use when meeting people in season 3?",
+      "options": [
+        "Jonathan Moore",
+        "Will Bettelheim",
+        "Edward Hall",
+        "Patrick Reed"
+      ],
+      "answer": "Will Bettelheim"
+    },
+    {
+      "question": "What is Joe’s favorite way to learn about someone?",
+      "options": [
+        "Stalking their social media",
+        "Talking to them directly",
+        "Asking mutual friends",
+        "Reading books"
+      ],
+      "answer": "Stalking their social media"
+    },
+    {
+      "question": "How many people has Joe killed throughout the series?",
+      "options": ["5", "12", "24", "35"],
+      "answer": "24"
+    }
+  ],
+  "sofiia": [
+    {
+      "question": "Wat is de grootste planeet in ons zonnestelsel?",
+      "options": ["Aarde", "Jupiter", "Saturnus", "Neptunus"],
+      "answer": "Jupiter"
+    },
+    {
+      "question": "Welke planeet staat bekend als de ‘Rode planeet’?",
+      "options": ["Venus", "Mars", "Mercurius", "Uranus"],
+      "answer": "Mars"
+    },
+    {
+      "question": "Hoeveel planeten zijn er in ons zonnestelsel?",
+      "options": ["7", "8", "9", "10"],
+      "answer": "8"
+    },
+    {
+      "question": "Wat is de naam van onze melkweg?",
+      "options": ["Andromeda", "Melkweg", "Orion", "Pegasus"],
+      "answer": "Melkweg"
+    },
+    {
+      "question": "Welke planeet heeft de meeste manen?",
+      "options": ["Saturnus", "Jupiter", "Uranus", "Neptunus"],
+      "answer": "Saturnus"
+    },
+    {
+      "question": "Hoe heet de eerste mens die op de maan liep?",
+      "options": [
+        "Yuri Gagarin",
+        "Neil Armstrong",
+        "Buzz Aldrin",
+        "Alan Shepard"
+      ],
+      "answer": "Neil Armstrong"
+    },
+    {
+      "question": "Wat is een supernova?",
+      "options": [
+        "Een exploderende ster",
+        "Een nieuw ontdekte planeet",
+        "Een zwart gat",
+        "Een komeet"
+      ],
+      "answer": "Een exploderende ster"
+    },
+    {
+      "question": "Hoe heet de grootste maan van Saturnus?",
+      "options": ["Europa", "Titan", "Io", "Ganymedes"],
+      "answer": "Titan"
+    },
+    {
+      "question": "Wat is een zwart gat?",
+      "options": [
+        "Een planeet zonder atmosfeer",
+        "Een ster die fel schijnt",
+        "Een gebied met een extreem sterke zwaartekracht",
+        "Een donkere nevel"
+      ],
+      "answer": "Een gebied met een extreem sterke zwaartekracht"
+    },
+    {
+      "question": "Welke planeet draait het dichtst bij de zon?",
+      "options": ["Venus", "Mercurius", "Mars", "Aarde"],
+      "answer": "Mercurius"
+    },
+    {
+      "question": "Hoe heet de grootste telescoop in de ruimte (2022)?",
+      "options": ["Hubble", "James Webb", "Kepler", "Spitzer"],
+      "answer": "James Webb"
+    },
+    {
+      "question": "Hoeveel tijd doet de aarde erover om rond de zon te draaien?",
+      "options": ["24 uur", "30 dagen", "365 dagen", "1000 dagen"],
+      "answer": "365 dagen"
+    },
+    {
+      "question": "Wat is de dichtstbijzijnde ster na de zon?",
+      "options": ["Polaris", "Proxima Centauri", "Sirius", "Betelgeuze"],
+      "answer": "Proxima Centauri"
+    },
+    {
+      "question": "Wat is een komeet?",
+      "options": [
+        "Een vallende ster",
+        "Een ijs- en stoflichaam dat rond de zon draait",
+        "Een kleine planeet",
+        "Een supernova"
+      ],
+      "answer": "Een ijs- en stoflichaam dat rond de zon draait"
+    },
+    {
+      "question": "Hoe heet het sterrenbeeld dat ook wel ‘de Grote Beer’ wordt genoemd?",
+      "options": ["Orion", "Ursa Major", "Cassiopeia", "Centaurus"],
+      "answer": "Ursa Major"
+    },
+    {
+      "question": "Welke planeet staat het dichtst bij de zon?",
+      "options": ["Venus", "Mercurius", "Mars", "Aarde"],
+      "answer": "Mercurius"
+    },
+    {
+      "question": "Hoeveel continenten zijn er op aarde?",
+      "options": ["5", "6", "7", "8"],
+      "answer": "7"
+    },
+    {
+      "question": "Welk land staat bekend als 'Het land van de rijzende zon'?",
+      "options": ["China", "Japan", "Korea", "Thailand"],
+      "answer": "Japan"
+    },
+    {
+      "question": "Hoeveel dagen heeft een schrikkeljaar?",
+      "options": ["364", "365", "366", "367"],
+      "answer": "366"
+    },
+    {
+      "question": "Wat is de grootste oceaan?",
+      "options": [
+        "Atlantische Oceaan",
+        "Grote Oceaan (Stille Oceaan)",
+        "Indische Oceaan",
+        "Noordelijke IJszee"
+      ],
+      "answer": "Grote Oceaan (Stille Oceaan)"
+    }
+  ],
+  "nicolle": [
+    {
+      "question": "What does ABS stand for in cars?",
+      "options": [
+        "Automatic Braking System",
+        "Anti-lock Braking System",
+        "Advanced Brake Safety",
+        "Active Balance System"
+      ],
+      "answer": "Anti-lock Braking System"
+    },
+    {
+      "question": "Which car manufacturer produces the Mustang?",
+      "options": ["Ford", "Chevrolet", "Dodge", "Pontiac"],
+      "answer": "Ford"
+    },
+    {
+      "question": "What does RPM stand for?",
+      "options": [
+        "Revolutions Per Minute",
+        "Rotations Per Motor",
+        "Rapid Power Motion",
+        "Rear Power Movement"
+      ],
+      "answer": "Revolutions Per Minute"
+    },
+    {
+      "question": "Which country is home to Ferrari?",
+      "options": ["Germany", "Italy", "France", "USA"],
+      "answer": "Italy"
+    },
+    {
+      "question": "What type of engine layout is a 'V8'?",
+      "options": [
+        "8 cylinders in a line",
+        "8 cylinders in a square",
+        "8 cylinders in a V-shape",
+        "4 cylinders doubled"
+      ],
+      "answer": "8 cylinders in a V-shape"
+    },
+    {
+      "question": "Which company makes the 'Civic'?",
+      "options": ["Toyota", "Honda", "Nissan", "Hyundai"],
+      "answer": "Honda"
+    },
+    {
+      "question": "What does 'hp' stand for in cars?",
+      "options": ["Horseplay", "High Power", "Horsepower", "Heat Pressure"],
+      "answer": "Horsepower"
+    },
+    {
+      "question": "What is the main advantage of turbocharging?",
+      "options": [
+        "Better sound",
+        "Increased fuel economy",
+        "More power",
+        "Less weight"
+      ],
+      "answer": "More power"
+    },
+    {
+      "question": "Which car brand uses the logo with four rings?",
+      "options": ["Audi", "Opel", "BMW", "Subaru"],
+      "answer": "Audi"
+    },
+    {
+      "question": "Which type of drivetrain is abbreviated as AWD?",
+      "options": [
+        "Automatic Wheel Drive",
+        "All-Wheel Drive",
+        "Active Wheel Distribution",
+        "Advanced Wheel Dynamics"
+      ],
+      "answer": "All-Wheel Drive"
+    },
+    {
+      "question": "What’s the top speed limit of most German Autobahns (without restrictions)?",
+      "options": ["120 km/h", "160 km/h", "No general speed limit", "180 km/h"],
+      "answer": "No general speed limit"
+    },
+    {
+      "question": "Which fuel type does a diesel engine run on?",
+      "options": ["Gasoline", "Diesel", "Ethanol", "LPG"],
+      "answer": "Diesel"
+    },
+    {
+      "question": "What does ECU stand for?",
+      "options": [
+        "Engine Control Unit",
+        "Electric Cooling Unit",
+        "Energy Control Usage",
+        "Engine Cooling Utility"
+      ],
+      "answer": "Engine Control Unit"
+    },
+    {
+      "question": "Tesla cars are primarily powered by…",
+      "options": ["Hydrogen", "Diesel", "Gasoline", "Electricity"],
+      "answer": "Electricity"
+    },
+    {
+      "question": "Which car is known as the 'Godzilla' in car culture?",
+      "options": [
+        "Toyota Supra",
+        "Nissan GT-R",
+        "Mazda RX-7",
+        "Mitsubishi Lancer Evo"
+      ],
+      "answer": "Nissan GT-R"
+    },
+    {
+      "question": "What does the 'M' in BMW M-series stand for?",
+      "options": ["Motorsport", "Modern", "Master", "Machine"],
+      "answer": "Motorsport"
+    },
+    {
+      "question": "Which car company created the Corolla?",
+      "options": ["Toyota", "Honda", "Ford", "Hyundai"],
+      "answer": "Toyota"
+    },
+    {
+      "question": "In drifting, what’s the main technique to start a drift?",
+      "options": [
+        "Sudden braking",
+        "E-brake pull",
+        "Driving straight",
+        "Turning slowly"
+      ],
+      "answer": "E-brake pull"
+    },
+    {
+      "question": "What type of engine does a Mazda RX-7 have?",
+      "options": ["Inline-6", "Wankel rotary engine", "Boxer-4", "V6"],
+      "answer": "Wankel rotary engine"
+    },
+    {
+      "question": "What does FWD stand for?",
+      "options": [
+        "Full Wheel Drive",
+        "Front-Wheel Drive",
+        "Fast Wheel Drive",
+        "Four-Wheel Distribution"
+      ],
+      "answer": "Front-Wheel Drive"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+.ldBar {
+  position: relative;
+}
+.ldBar.label-center > .ldBar-label {
+position: absolute;
+
+right: 0;
+font-size: 8px;
+transform: translate(20px, -25px);
+  color: var(--font-color);
+}
+.ldBar-label:after {
+  content: "%";
+  display: inline;
+}
+.ldBar.no-percent .ldBar-label:after {
+  content: "";
+}
+.ldBar{
+  justify-self: center;
+  
+  scale: 2.3;
+}

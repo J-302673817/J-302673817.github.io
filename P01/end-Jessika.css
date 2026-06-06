@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(8, 178, 227);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#EndPage {
+    background-image: url('https://www.gamerefinery.com/wp-content/uploads/2021/10/cookie-run-kingdom-revenue-spike-header-image.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+#end {
+    background: rgba(255, 235, 198, 0.9);
+    padding: 3rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    max-width: 600px;
+    width: 90%;
+}
+
+#end h1 {
+    font-size: 3.5rem;
+    color: #ff6b00;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#stats {
+    margin-bottom: 3rem;
+}
+
+#stats p {
+    font-size: 1.8rem;
+    color: #333;
+    margin: 1rem 0;
+    padding: 0.8rem;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#stats span {
+    font-weight: bold;
+    color: #ff6b00;
+}
+
+.end-buttons {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+.btn {
+    font-size: 1.8rem;
+    padding: 1.2rem 2.5rem;
+    width: 200px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(135deg, rgb(255, 177, 0) 0%, rgb(255, 119, 0) 100%);
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(184, 129, 0, 0.4);
+    background: linear-gradient(135deg, rgb(255, 199, 0) 0%, rgb(255, 139, 0) 100%);
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    #end {
+        padding: 2rem;
+    }
+
+    #end h1 {
+        font-size: 2.5rem;
+    }
+
+    #stats p {
+        font-size: 1.4rem;
+    }
+
+    .btn {
+        font-size: 1.5rem;
+        padding: 1rem 2rem;
+        width: 180px;
+    }
+
+    .end-buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #end h1 {
+        font-size: 2rem;
+    }
+
+    #stats p {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        font-size: 1.3rem;
+        padding: 0.8rem 1.5rem;
+        width: 160px;
+    }
+}

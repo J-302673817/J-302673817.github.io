@@ -1,0 +1,47 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-size: cover;
+  background-position: center;
+  background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20230407/pngtree-kitchen-cartoon-illustration-background-image_2159895.jpg);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.rules {
+  background-color: rgba(255, 200, 150);
+  width: 500px;
+  max-width: 600px;
+  padding: 30px 40px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+} 
+
+.rules h1 {
+  text-align: center;
+}
+
+
+
+button {
+  cursor: pointer;
+  padding: 12px 15px;
+  border-radius: 12px;
+  border: none;
+  text-decoration: none;
+  background-color:rgb(219, 147, 97);
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+button:hover {
+  background-color: white;
+  transform: scale(1.08);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+}

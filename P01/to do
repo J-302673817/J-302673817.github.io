@@ -1,0 +1,69 @@
+<!-- 1.  Maak een scrumboard en vul deze per sprint aan met taken en voortgang.
+
+2. Houd een scrumlogboek bij (dagelijkse/wekelijkse updates).
+
+3. Neem deel aan daily scrums, reviews en retrospectives.
+
+4. Maak werkafspraken met je team (definition of fun).
+
+5. Maak een schets/tekening van de quizpagina’s (welkomstscherm, quiz, eindscherm).
+
+6. Schrijf de spelregels in een Word-document.
+
+7. Werk een functioneel ontwerp uit (welke functies, logica, schermen).
+
+8. Zet je GitHub branch op en werk daar altijd in.
+
+9. Zorg dat de main branch altijd foutloos werkt.
+
+10. Bouw de quiz in HTML (structuur: headings, secties, tabellen, formulieren).
+
+11. Voeg CSS styling toe (flexbox, grid, thema’s per categorie, kleuren, box-model). -->
+
+ 
+Programmeer in JavaScript:
+
+<!-- 12. Vragen en antwoorden tonen (meerkeuze). -->
+
+13. Naam invoeren en tonen tijdens de quiz.
+
+<!-- 14. Score bijhouden (+ voor goed, – voor fout). -->
+
+<!-- 15. 50/50 power-up toevoegen. -->
+
+<!-- 16. Willekeurige volgorde van vragen. -->
+
+17. Eindscherm met statistieken (goed/fout, totaal).
+
+<!-- 18. Eindscherm bij teveel fouten. -->
+
+<!-- 19. Minstens 20 vragen en 4 categorieën. -->
+
+20. Mogelijkheid om categorie te kiezen.
+
+21. Ander thema per categorie.
+
+<!-- 22. Feedback geven per antwoord (goed/fout). -->
+
+23. Mogelijkheid om quiz opnieuw te starten.
+
+
+
+24. Schrijf een testplan met scenario’s (bijv. juiste/foute antwoorden, power-up werkt).
+
+25. Test alle functionaliteiten (punten, categorieën, thema’s).
+
+26. Leg testresultaten vast in een testrapport.
+
+27 Doe verbetervoorstellen op basis van de testresultaten.
+
+
+28. Code in GitHub (met comments, nette structuur, conventies).
+
+29. Spelregels document in Word.
+
+30. Testplan en testrapport.
+
+31 Foto’s van het scrumboard per sprint.
+
+32. Eindpresentatie met uitleg en demo.

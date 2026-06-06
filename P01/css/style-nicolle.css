@@ -1,0 +1,372 @@
+/* color code for website *
+background color #08b2e3
+background color for txt #ffebc6
+background color for multiple choice # ffb100
+wrong ans color rgb(255, 47, 47)
+right ans color rgb(68, 255, 47)
+*/
+/* 
+.outfit-<uniquifier> {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+/* normal comment */
+/*  */
+/* ! */
+/* ? */
+/* //  */
+/* TODO */
+:root {
+  --box-shadow-color: #90875e;
+}
+* {
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+}
+body {
+  background-color: #08b2e3;
+}
+/* importnant styling */
+[hidden] {
+  display: none !important;
+}
+[blurActive] {
+  filter: blur(4px) !important;
+}
+[notClickable] {
+  opacity: 0.5 !important;
+  cursor: not-allowed !important;
+}
+.notVisible {
+  display: none;
+}
+/*  animations */
+.is-animated {
+  animation-duration: 1s;
+  animation-name: scoreAnimate;
+}
+@keyframes scoreAnimate {
+  0% {
+    background-color: #ffebc6;
+    transform: scale(1);
+  }
+  50% {
+    background-color: #72bf6a;
+    transform: scale(1.1);
+  }
+  100% {
+    background-color: #ffebc6;
+    transform: scale(1);
+  }
+}
+/* reusable classes for js */
+.wrongBtnStyle {
+  background-color: #f94449;
+}
+.rightBtnStyle {
+  background-color: #72bf6a;
+}
+/* 'style for start screen */
+
+.startScreen {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url(../imgs/P1130313.jpg);
+  background-color: #08b2e3;
+  background-blend-mode: lighten;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.startScreen span {
+  display: flex;
+}
+.startScreen h1 {
+  font-size: 6em;
+  text-wrap: nowrap;
+}
+.startScreen button {
+  margin-top: 100px;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 2.5em;
+  background-color: #ffb100;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.startScreen button:hover {
+  scale: 1.1;
+  background-color: #ffc94c;
+}
+/* style for pop up  */
+.pop-upAlert {
+  position: absolute;
+  background-color: #ffebc6;
+  height: 250px;
+  width: 400px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.5);
+  border-radius: 15px;
+  -webkit-box-shadow: 0 0 5px 2px var(--box-shadow-color);
+  -moz-box-shadow: 0 0 5px 2px var(--box-shadow-color);
+  box-shadow: 0 0 5px 2px var(--box-shadow-color);
+}
+.pop-upContain {
+  padding: 20px;
+}
+.pop-upContain p {
+  padding-top: 10px;
+}
+#cancel {
+  background-color: #ffb100;
+  padding: 15px;
+  border-radius: 10px;
+  border: 0px;
+  margin: 20px 20px 0;
+  left: 32%;
+  position: relative;
+  width: fit-content;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+#cancel:hover {
+  scale: 1.2;
+  background: #ffc94c;
+}
+/* style for header */
+.nicolle-quizheader {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.nicolle-quizheader h1 {
+  padding: 15px;
+  width: fit-content;
+  background-color: #ffebc6;
+  border-radius: 10px;
+}
+.nicolle-quizheader h2 {
+  padding: 5px;
+  margin-top: 20px;
+  width: fit-content;
+  background-color: #ffebc6;
+  border-radius: 10px;
+}
+/* style for close btn and power up */
+.material-symbols-outlined {
+  background-color: #ffb100;
+  padding: 10px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border-radius: 25px;
+  scale: 1.2;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.material-symbols-outlined:hover {
+  scale: 1.3;
+  background: #e6a102;
+}
+#closeQuiz img {
+  filter: invert(1);
+}
+#powerUp {
+  padding: 5px;
+  margin-top: 20px;
+  margin-left: 20px;
+  width: fit-content;
+  background-color: #ffebc6;
+  border-radius: 10px;
+  border: none;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+#powerUp:hover {
+  transform: scale(1.1);
+  background-color: #fffefc;
+}
+.powerInfo {
+  background-color: #ffebc6;
+  opacity: 0.5 !important;
+  padding: 10px;
+  border-radius: 5px;
+  width: fit-content;
+  position: absolute;
+  transform: translateY(-40px) translateX(120px);
+}
+/* style for questions */
+.questionsAppear {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.questions {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffebc6;
+  width: 450px;
+  height: 250px;
+  border-radius: 15px;
+  font-size: 30px;
+}
+
+/* style for answers */
+.answers ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.answersShow {
+  background-color: #ffb100;
+  padding: 15px;
+  border-radius: 10px;
+  width: 300px;
+  cursor: pointer;
+  margin: 25px;
+  transition: 0.3s ease;
+}
+.answersShow:hover {
+  transform: scale(1.05);
+  background-color: #ffc94c;
+}
+/* buttons css */
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+.buttons h2 {
+  background-color: #ffebc6;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 20px;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+.buttons h2:hover {
+  transform: scale(1.1);
+  background-color: #fffefc;
+}
+/* feedback screen css */
+.feedbackScreen {
+  text-align: center;
+  /* !change back to none */
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+#carSticker {
+  position: absolute;
+  rotate: 25deg;
+  display: none;
+  width: 400px;
+  right: 0;
+  transform: translateY(150px);
+}
+.feedbackScreen h1 {
+  color: #ffb100;
+  text-shadow: 2px 2px #e6a102;
+  font-size: 6em;
+  text-wrap: nowrap;
+}
+.feedbackScreen h3 {
+  color: #000000;
+  font-size: 2em;
+}
+.finalScore {
+  color: #ffebc6;
+  font-size: 3em;
+  margin: 20px;
+}
+.buttons {
+  cursor: pointer;
+}
+.rettryBtn img {
+  filter: invert(1);
+}
+/* ! STYLE THE POP UP FOR SMALLER SCREENS */
+@media only screen and (max-width: 767px) {
+  /* css for startpagina  */
+  .startScreen h1 {
+    transform: scale(0.5);
+    width: fit-content;
+  }
+  .startScreen button {
+    transform: scale(0.7);
+  }
+  .material-symbols-outlined {
+    transform: scale(0.7);
+  }
+  /* Css for quiz itself */
+  .nicolle-quizheader {
+    transform: scale(0.7);
+  }
+  .questionsAppear {
+    transform: scale(0.7);
+    margin-top: 0;
+  }
+  .answers ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .answers ul li {
+    width: 265px;
+    margin: 10px;
+  }
+  .buttons h2 {
+    transform: scale(0.8);
+  }
+  .questions p {
+    font-size: 30px;
+  }
+  #carSticker {
+    width: 330px;
+    top: 0;
+    transform: translateY(90px);
+  }
+  .feedbackScreen h1 {
+    font-size: 3em;
+  }
+  .feedbackScreen h3 {
+    font-size: 1.5em;
+  }
+  .finalScore {
+    font-size: 2em;
+    margin: 10px;
+  }
+  .pop-upAlert {
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+}

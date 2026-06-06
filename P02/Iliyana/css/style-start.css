@@ -1,0 +1,67 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+#startpage {
+  background-size: cover;
+  background-position: center;
+  background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20230407/pngtree-kitchen-cartoon-illustration-background-image_2159895.jpg);
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  color: white;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.container h1 {
+  font-size: 56px;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.btn {
+  background: rgb(219, 147, 97);
+  color: white;
+  border: 2px solid white;
+  padding: 15px 40px;
+  font-size: 24px;
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: rgba(255, 255, 255, 0.8);
+  color: #333;
+  transform: scale(1.05);
+}
+
+.btn1 {
+  background: rgb(219, 147, 97);
+  color: white;
+  border: 2px solid white;
+  padding: 15px 40px;
+  font-size: 24px;
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  text-decoration: none;
+}
+
+.btn1:hover {
+  background: rgba(255, 255, 255, 0.8);
+  color: #333;
+  transform: scale(1.05);
+}
+
+
+

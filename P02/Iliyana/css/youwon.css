@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20230407/pngtree-kitchen-cartoon-illustration-background-image_2159895.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.win-popup {
+  background-color: rgba(255, 200, 150);
+  padding: 40px;
+  border-radius: 25px;
+  text-align: center;
+  width: 300px;
+  max-width: 450px;
+}
+
+
+.win-popup h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+.win-popup p {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+#winRestartBtn {
+  background-color: #ff8c8c;
+  font-size: 16px;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#winRestartBtn:hover {
+  transform: scale(1.05);
+  background-color: #ff5c5c;
+}

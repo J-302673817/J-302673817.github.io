@@ -1,0 +1,176 @@
+
+.answer-btn.correct {
+  background-color: #44FF2F !important;
+  color: white;
+}
+
+.answer-btn.wrong {
+  background-color: #FF2F2F !important;
+  color: white;
+}
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1c1c1c, #8b0000); /* donkergrijs → bloedrood */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+
+.container {
+  background: white;
+  width: 85%;
+  max-width: 600px;
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+  position: relative;
+} 
+
+
+.quiz-header {
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+/* Timer */
+.quiz-timer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #ff6363;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.quiz-timer .material-symbols-outlined {
+  font-size: 22px;
+}
+
+/* Vraag status + score */
+.question-status {
+  font-weight: 500;
+  color: #333;
+}
+
+.score {
+  background-color: #610707;
+  color: white;
+  font-weight: 600;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+/* Vraag */
+.quiz-question {
+  font-size: 1.7rem; 
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* Antwoordknoppen */
+.answer-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.answer-btn {
+  flex: 1 1 45%; /* 2 per rij */
+  min-width: 200px;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: #ffb100;
+  color: black;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.answer-btn:hover {
+  background-color: #ffd15a;
+  transform: scale(1.05);
+}
+
+/* Footer */
+.quiz-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Next knop */
+.next-question-btn {
+  background-color: #008cff;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.next-question-btn:hover {
+  background-color: #4dafff;
+}
+
+/* 50/50 knop */
+.fifty-btn {
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.fifty-btn:hover {
+  background-color: #666;
+}
+
+/* Pop-up melding */
+.modal {
+  position: absolute;
+  bottom: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  border: 2px solid #444;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  text-align: center;
+  border: 2px solid grey;
+}
+
+.zichtbaar {
+    display: block;
+}
+
+.onzichtbaarheid {
+    display: none;
+}

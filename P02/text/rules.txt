@@ -1,0 +1,125 @@
+//? CHESS PIECES AS BIRDS
+----------------------
+//* WHITE SIDE
+
+King: albino raven *
+
+Queen: albino rook (bird) *
+
+Rooks: albino Magpie *
+
+Bishops: albino crow *
+
+Knights: Eurasian Jay
+
+Pawns: albino Jackdaw *
+
+//* BLACK SIDE
+
+King: Raven
+
+Queen: Rook (bird)
+
+Rooks: Black Magpie
+
+Bishops: black crow
+
+Knights: Black-headed Jay
+
+Pawns: Dark jackdaw
+
+//? CHESS GAME RULES
+---------------------
+
+//* RAVEN KING (K)
+- Moves 1 square in any direction.
+- If the Raven King is captured → instant loss.
+
+//* ROOK BIRD QUEEN (Q)
+- Any number of squares.
+- Horizontally, vertically, or diagonally.
+- Cannot jump over pieces.
+
+//* MAGPIE ROOKS (R)
+- Any number of squares.
+- Vertically or horizontally only.
+- Cannot jump over pieces.
+
+//* CROW BISHOPS (B)
+- Any number of squares.
+- Diagonally only.
+- Cannot jump over pieces.
+- Always stays on its starting color (light or dark).
+
+//* JAY KNIGHTS (N)
+- Moves in an L-shape:
+    - 2 squares in one direction + 1 square sideways.
+- ONLY piece that can jump over other pieces.
+- Can land on any color square.
+
+//* JACKDAW PAWNS (P)
+- Moves 1 square forward.
+- On its very first move: may go 2 squares forward.
+- Pawns capture diagonally (one square forward-left or forward-right).
+- Cannot move backward.
+
+//? SPECIAL RULES
+-----------------
+
+//* Capturing
+- A piece is captured by moving onto its square.
+- You cannot capture your own flock.
+
+//* Turns
+- Players alternate turns between Black and White.
+- A player may only move their own pieces.
+
+//* Check & Checkmate
+- There are no check or checkmate rules.
+- The Raven King may be captured directly.
+
+//* Draws & Stalemate
+- There are no draws.
+- There is no stalemate condition.
+
+//? WIN CONDITION
+-----------------
+
+There is only one way to win:
+Capture the enemy Raven King.
+
+When the Raven King falls,
+their flock scatters and the battle ends.
+The player who lands the final blow becomes
+Master of the Murder.
+
+//? THE GOAL OF THE GAME 
+When the raven falls, its treasure passes to the one who outmaneuvered the storm.
+In this battlefield of birds, victory is not given it is claimed through cunning, courage, and calculated sacrifice.
+
+//? MURDER’S GAMBIT LORE
+Deep within Blackwing Vales, two ancient bird clans rule the forest canopy:
+the Pale Murder of white crows and the Night Murder of black ravens.
+For centuries, these flocks have fought for dominance, territory, and treasure.
+
+Their battles follow an old ritual known as Murder’s Gambit 
+a sacred war played on a moss-covered field of 64 tiles.
+Every bird that falls releases golden spirit dust, the treasure of the forest.
+Pawns drop a spark, powerful birds drop more, and a king’s fall ends the war instantly.
+
+There are no ties, no truces, no mercy.
+A flock that cannot move is considered defeated,
+and the last Raven King standing claims all treasure spilled in battle.
+
+Each piece in your murder ravens, rooks, magpies, crows, jays, and jackdaws 
+is a living warrior obeying your command.
+Every move is a strategy.
+Every kill strengthens your hoard.
+Every sacrifice shapes your fate.
+
+In Murder’s Gambit, the clever, the bold, and the ruthless rise above the canopy.
+Only one king will survive.
+Only one murder will claim the forest.
+
+change the importnant ones ot opacity 0
+change the original to opacity 0

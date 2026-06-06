@@ -1,0 +1,59 @@
+
+#startpage {
+  background-image: url(https://images8.alphacoders.com/118/thumb-1920-1185380.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  color: white;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.container h1 {
+  font-size: 4rem; /* groter en opvallender */
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.btn {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 2px solid white;
+  padding: 15px 40px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.btn:hover {
+  background: rgba(255, 255, 255, 0.8);
+  color: #333;
+  transform: scale(1.05);
+}
+
+.btn1 {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 2px solid white;
+  padding: 15px 40px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.btn1:hover {
+  background: rgba(255, 255, 255, 0.8);
+  color: #333;
+  transform: scale(1.05);
+}
+

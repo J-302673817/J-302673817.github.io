@@ -1,0 +1,551 @@
+/* #.aref-ruqaa-regular {
+  font-family: "Aref Ruqaa", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.aref-ruqaa-bold {
+  font-family: "Aref Ruqaa", serif;
+  font-weight: 700;
+  font-style: normal;
+} */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Aref Ruqaa", serif;
+}
+
+:root {
+  --bg-interfaces: #0000005c;
+  --font-color: aliceblue;
+  --standard-radius: 15px;
+}
+
+/* importnant styling */
+
+[hidden] {
+  display: none !important;
+}
+.notVisible {
+  display: none !important;
+}
+
+.notOpacitied {
+  inset: 0;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.trans {
+  transition: 1s ease;
+}
+.positiveOpacitied {
+  opacity: 1;
+  display: block;
+  visibility: visible;
+  pointer-events: auto;
+}
+/* ? were making the attunament opacity smooth animation */
+.seeable {
+  display: block;
+}
+body {
+  overflow: hidden;
+  background-color: black;
+}
+.glass {
+  background: rgba(17, 17, 17, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(127, 127, 127, 0.3);
+  box-shadow:
+    2px 2px 10px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(202, 221, 226, 0.5),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 0 4px 2px rgba(59, 59, 59, 0.2);
+  position: relative;
+}
+.notClickable {
+  opacity: 0.5;
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+/* css fot the start screen */
+.startinfo {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 30px;
+}
+#mgLogo {
+  width: 700px;
+  filter: drop-shadow(7px 7px 4px #080808);
+}
+.crowfacts {
+  position: absolute;
+  bottom: 0;
+  text-shadow: 2px 2px 2px #000000;
+  padding-bottom: 40px;
+  color: var(--font-color);
+}
+#crowfactOutput {
+  padding: 10px;
+  backdrop-filter: blur(5px);
+}
+#scene,
+#menuScene {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  z-index: -9999;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+}
+#menuScene {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+.layer img {
+  margin-left: -100px;
+  margin-top: -140px;
+  width: 120%;
+  height: auto;
+  pointer-events: none;
+}
+.barDisplay {
+  display: flex;
+}
+#startBtn {
+  position: absolute;
+  transform: translate(250px, -27px);
+  cursor: pointer;
+  font-size: 25px;
+  padding: 1px 10px 10px;
+  color: var(--font-color);
+  border-radius: var(--standard-radius);
+}
+
+/* css for the menu screen */
+.menu-screen {
+  color: var(--font-color);
+  padding: 30px;
+  width: 100vw;
+  height: 100vh;
+}
+.menu-stuff-wrapped {
+  position: absolute;
+  top: 0;
+}
+.menu-screen h1 {
+  font-size: 5rem;
+}
+#firstHr {
+  width: 650px;
+}
+.menu-items {
+  margin-left: 30px;
+  width: 400px;
+  margin-top: 300px;
+}
+.menu-it1 {
+  padding: 20px;
+}
+.menu-it1 h3 {
+  position: absolute;
+  font-size: 23px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.menu-it1 hr {
+  margin-top: 20px;
+  transform: translateY(25px);
+}
+#menuPlayBtn {
+  font-weight: 800;
+}
+.menu-it1 h3:hover {
+  scale: 1.15;
+}
+.exit a {
+  color: var(--standard-radius);
+  text-decoration: none;
+}
+.attunement,
+.legacy-contain {
+  position: absolute;
+  top: 0;
+  width: 800px;
+  height: 300px;
+  border-radius: var(--standard-radius);
+  transform: translate(700px, 400px);
+}
+.attunement h2,
+.legacy-contain h2 {
+  position: absolute;
+  backdrop-filter: blur(10px);
+  padding: 5px;
+  z-index: 20;
+  justify-self: center;
+  transform: translateY(-50px);
+}
+
+.attunement img {
+  cursor: pointer;
+}
+.contain-nav ul {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  gap: 20px;
+  justify-content: space-evenly;
+}
+.contain-nav ul li {
+  list-style: none;
+  cursor: pointer;
+}
+.contain-nav ul li:hover {
+  scale: 1.15;
+}
+.attunement-settings {
+  display: none !important;
+}
+.attunement-settings.visible {
+  display: block !important;
+}
+.attunement-settings {
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+}
+#showRules {
+  padding: 5px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: none;
+}
+.rules-container {
+  background-image: url(../imgs/gameItems/Old_Open_Book_PNG_Clipart-1059.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 700px;
+  z-index: 40000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.3s ease;
+  filter: drop-shadow(0 18px 50px rgb(0, 0, 0));
+
+  transform: translate(250px, 100px);
+  display: none;
+}
+#closeRules {
+  background-color: rgba(218, 44, 0, 0.584);
+  padding: 5px;
+  cursor: pointer;
+  position: absolute;
+  border-radius: 30px;
+  margin: 0;
+}
+.rules {
+  margin-left: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+#birdInfoImg {
+  width: 400px;
+  margin-top: 60px;
+  margin-left: 90px;
+}
+#info2 {
+  margin-right: 100px;
+  margin-top: -100px;
+}
+.setting {
+  display: flex;
+  width: 500px;
+  margin-top: 50px;
+  justify-content: space-between;
+}
+.settingSlider {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+  flex-direction: row;
+}
+.legacyTitle {
+  margin-top: 20px;
+  margin-left: 30px;
+}
+.legacy-info {
+  margin-left: 30px;
+  margin-top: 10px;
+}
+.legacyQuote {
+  margin-left: 30px;
+  margin-top: 10px;
+}
+.legacyQuote a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+#hendrik {
+  position: absolute;
+  right: 0;
+  transform: translate(-100px);
+}
+#hendrik img {
+  width: 100px;
+  right: 0;
+  transform: translate(-20px, -80px);
+  filter: drop-shadow(3px 3px 4px #4f7d81);
+}
+/* css for the game itself */
+.game-stuff-wrapped {
+  position: absolute;
+  top: 0;
+}
+.inGameBG {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -9;
+  pointer-events: none;
+}
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.board-align {
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(500px);
+}
+
+.board {
+  display: grid;
+  width: 800px;
+  box-shadow:
+    5px 5px 30px rgba(2, 232, 248, 0.135),
+    -5px -5px 30px rgba(195, 2, 243, 0.258);
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.square {
+  height: 100px;
+  width: 100px;
+  position: relative;
+}
+.square.highlight {
+  outline: 3px solid gold;
+  box-shadow: inset 0 0 0 2px rgba(255, 215, 0, 0.6);
+}
+
+.black {
+  background-image: url(../imgs/tiles/Wtile.JPG);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.white {
+  background-image: url(../imgs/tiles/Btile.JPG);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.letterStyling {
+  display: flex;
+  width: 800px;
+  justify-content: space-around;
+}
+.bNumberStyling {
+  display: flex;
+  position: absolute;
+  left: 0;
+  transform: translate(435px, -15px);
+  flex-direction: column;
+  height: 800px;
+  justify-content: space-around;
+}
+.piece img {
+  width: 95px;
+  position: relative;
+
+  pointer-events: none;
+}
+.piece {
+  position: relative;
+  z-index: 20;
+}
+.gameSidebar {
+  width: 300px;
+  height: 100vh;
+  z-index: 10;
+  position: absolute;
+  color: var(--font-color);
+  transition: 0.5s;
+  background-color: var(--bg-interfaces);
+}
+.menu-bnts {
+  position: absolute;
+  right: 0;
+  color: var(--font-color);
+  padding: 20px;
+}
+.sidebarNav {
+  display: flex;
+  justify-content: space-between;
+}
+.quit {
+  margin: 10px;
+  padding: 5px 10px 10px 10px;
+  border-radius: 25px;
+  font-size: 20px;
+  color: var(--font-color);
+  cursor: pointer;
+}
+.sidebarNav > img {
+  margin: 20px;
+}
+#arrowForward {
+  display: none;
+}
+.sideInformation {
+  margin-top: 30px;
+  margin-left: 20px;
+  opacity: 1;
+  transition: 0.3s ease;
+  text-wrap: nowrap;
+}
+.sideInformation h3 {
+  margin-top: 20px;
+  font-size: 23px;
+}
+.sideInformation p,
+.sideInformation li {
+  font-size: 20px;
+}
+.killValuesIndex {
+  display: flex;
+  width: 230px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.killValueTxt {
+  transform: translateY(6px);
+}
+.valueCoins {
+  width: 20px;
+  transform: translateY(3px);
+}
+#coinAnimation {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  width: 800px;
+  height: auto;
+
+  pointer-events: none;
+  z-index: 50;
+}
+
+/* css for the win/ lose screens */
+/* background-image: url(../imgs/feedackArt/bird-breed_2cd7d88f-2438-4acf-9bd8-64c561ae55ae.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: -99;
+  width: 100%;
+  height: 100%; */
+.win-screen {
+  background-image: url(../imgs/feedackArt/winWhite.JPG);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  color: var(--font-color);
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.win-container,
+.lose-container {
+  height: 100vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.winText,
+.loseText {
+  font-size: 30px;
+  margin-top: 20px;
+}
+.winQuite,
+.loseQuote {
+  position: absolute;
+  margin-bottom: 170px;
+  width: 100%;
+  text-wrap: nowrap;
+
+  font-size: 23px;
+  bottom: 0;
+}
+.escButtons {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  gap: 40px;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+.escButtons button {
+  color: var(--font-color);
+  font-size: 35px;
+  cursor: pointer;
+  padding: 3px 15px 10px;
+  border-radius: var(--standard-radius);
+}
+.Home {
+  color: var(--font-color);
+  text-decoration: none;
+}
+/* Media query for responive design */

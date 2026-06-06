@@ -1,0 +1,107 @@
+* {
+    background-color: #08b2e3;
+    margin: 10px;
+}
+
+.speciaal1 {
+    color: rgb(0, 0, 0);
+}
+
+#questionShow {
+    text-align: center;
+}
+
+#nextBtn, #prevBtn{
+    font-variant-caps: all-petite-caps;
+    color: #000000;
+    text-align: center;
+    background-color: #006c67;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+#restartBtn {
+    background-color: #006c67;
+     color: #000000;
+     font-variant-caps: all-petite-caps;
+     font-size: 20px;
+     border-radius: 10px;
+}
+#nextBtn {
+    margin-right: 50px;
+}
+#quiz {
+    text-align: center;
+    margin: 10px;
+}
+.answersShow {
+    text-align: center;
+    color: #000000;
+    height: 101px;
+    font-size: larger;
+    border-radius: 10px;
+}
+
+.answersPos button {
+    background-color: rgb(202, 200, 43);
+
+}
+#teller {
+    font-size: 20px;
+}
+/* #knop {
+    width: 200px;
+    padding: 25px;
+    margin: 20px;
+    font-variant-caps: all-petite-caps;
+    object-position: 50px;
+} */
+
+nav {
+    font-variant-caps: all-petite-caps;
+    font-size: 24px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 25px;
+    justify-content: center;
+    align-content: center;
+    height: 50vh;
+}
+
+.answersPos {
+    display: block;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.grid button {
+    width: 200px;
+    height: 125px;
+}
+
+#fiftyBtn {
+    background-color: #006c67;
+    color: #000000;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.menu {
+    background-color: #006c67;
+    color: #000000;
+    border-radius: 5px;
+    font-size: 21px;
+    margin-left: -10px;
+}
+
+#endScreen {
+    display: block;
+    margin-top: 100px;
+    font-size: 25px;
+    border: #000000;
+    border-radius: 5px;
+}

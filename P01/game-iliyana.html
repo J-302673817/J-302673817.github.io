@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="stylesheet" href="css/style-game-iliyana.css" />
+  </head>
+  <body>
+    <!-- Quiz container -->
+    <div class="container" id="quiz">
+      <header class="quiz-header">
+        <div class="quiz-timer">
+          <span class="material-symbols-outlined"> timer</span>
+          <p class="time-duration">15s</p>
+        </div>
+        <p class="question-status"><b>1</b> of <b> 20 </b> questions</p>
+        <p class="score">Score: <b>0</b></p>
+
+      </header>
+
+      <h1 class="quiz-question"></h1>
+
+      <div class="answer-options">
+        <button class="answer-btn"></button>
+        <button class="answer-btn"></button>
+        <button class="answer-btn"></button>
+        <button class="answer-btn"></button>
+      </div>
+
+      
+
+      <div class="quiz-footer">
+        <button class="next-question-btn">
+          next
+          <span class="material-symbols-outlined">arrow_right_alt</span>
+        </button>
+        <div id="pop-up" class="modal" hidden> 
+        <h2>Answer the question first!</h2>
+      </div>
+
+        <button class="fifty-btn">50/50</button>
+
+       <div id="pop-up-1" class="modal" hidden> 
+        <h2>You have used all your 50/50 hints</h2>
+      </div>
+      </div>
+    </div>
+    <script src="script-iliyana.js" defer></script>
+  </body>
+</html>
