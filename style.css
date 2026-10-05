@@ -245,10 +245,11 @@ footer p {
   border: 1px solid rgba(212, 167, 253, 0.3);
 }
 
-.lang-toggle {
-  background: transparent;
-  border: 1.5px solid #E4C8FE;
-  color: #E4C8FE;
+.navbar .lang-toggle,
+button.lang-toggle {
+  background: transparent !important;
+  border: 1.5px solid #E4C8FE !important;
+  color: #E4C8FE !important;
   border-radius: 40px;
   padding: 0.3rem 1.1rem;
   font-weight: 600;
@@ -258,13 +259,15 @@ footer p {
   white-space: nowrap;
 }
 
-.lang-toggle:hover {
-  background: #E4C8FE;
-  color: #4a0160;
+.navbar .lang-toggle:hover,
+button.lang-toggle:hover {
+  background: #E4C8FE !important;
+  color: #4a0160 !important;
 }
 
 @media (max-width: 992px) {
-  .lang-toggle {
+  .navbar .lang-toggle,
+  button.lang-toggle {
     margin-left: 0;
     margin-top: 0.5rem;
     width: fit-content;
