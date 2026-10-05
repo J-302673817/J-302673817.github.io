@@ -1,418 +1,737 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio 2.0 - Jessika </title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio 2.0 - Jessika</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      background: #0b0014;
+      color: #e4c8fe;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+    }
+    .navbar-custom {
+      background: rgba(20, 2, 30, 0.95);
+      backdrop-filter: blur(6px);
+      border-bottom: 1px solid rgba(211, 167, 253, 0.3);
+    }
+    .navbar-brand-custom {
+      background: linear-gradient(135deg, #d3a7fd, #a45de0);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .nav-link-custom {
+      color: #c8a2e0 !important;
+      transition: 0.2s;
+      border-radius: 30px;
+      padding: 0.5rem 1rem !important;
+    }
+    .nav-link-custom:hover,
+    .nav-link-custom.active {
+      background: rgba(211, 167, 253, 0.15);
+      color: #f0e2ff !important;
+    }
+    .hero-section {
+      background: radial-gradient(circle at 20% 30%, #3b0b4e, #0b0014 80%);
+      padding: 4rem 1rem;
+      border-radius: 0 0 60px 60px;
+      margin-bottom: 1rem;
+    }
+    .hero-title {
+      background: linear-gradient(120deg, #e4c8fe, #d3a7fd, #b67df0);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+    .hero-subtitle {
+      color: #cfaef5;
+      font-weight: 300;
+      letter-spacing: 1px;
+    }
+    .section-title {
+      background: linear-gradient(135deg, #d3a7fd, #b67df0);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      border-left: 5px solid #a45de0;
+      padding-left: 18px;
+      font-weight: 700;
+    }
+    .about-card {
+      background: rgba(30, 5, 45, 0.6);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(211, 167, 253, 0.3);
+      border-radius: 28px;
+      padding: 2.2rem;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(211, 167, 253, 0.1);
+    }
+    .about-text p {
+      color: #d9c2f5;
+    }
+    .sliding-card {
+      background: rgba(28, 3, 42, 0.7);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(211, 167, 253, 0.3);
+      border-radius: 28px;
+      transition: all 0.25s ease;
+      overflow: hidden;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .sliding-card:hover {
+      transform: translateY(-6px);
+      border-color: #d3a7fd;
+      box-shadow: 0 20px 35px -5px #00000080, 0 0 0 1px #d3a7fd40;
+    }
+    .card-img-top-slider {
+      width: 100%;
+      height: 170px;
+      object-fit: cover;
+      border-bottom: 1px solid #d3a7fd40;
+    }
+    .sliding-card-body {
+      padding: 1.5rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .sliding-card-title {
+      color: #f0e2ff;
+      font-weight: 700;
+      font-size: 1.3rem;
+      margin-bottom: 0.75rem;
+    }
+    .tech-tag-slider {
+      background: rgba(211, 167, 253, 0.15);
+      border: 1px solid #a45de080;
+      color: #d3a7fd;
+      border-radius: 30px;
+      padding: 0.25rem 1rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      display: inline-block;
+      margin-right: 6px;
+    }
+    .timeline-slider {
+      color: #b389e0;
+      font-size: 0.8rem;
+      margin-bottom: 0.75rem;
+    }
+    .desc-slider {
+      color: #c8a2e0;
+      font-size: 0.9rem;
+      flex: 1;
+    }
+    .btn-slider-custom {
+      background: transparent;
+      border: 1px solid #a45de0;
+      color: #d3a7fd;
+      border-radius: 40px;
+      padding: 0.4rem 1.2rem;
+      font-size: 0.85rem;
+      font-weight: 500;
+      transition: 0.2s;
+      display: inline-block;
+      margin-right: 8px;
+      margin-top: 8px;
+      text-decoration: none;
+    }
+    .btn-slider-custom:hover {
+      background: #a45de0;
+      color: #0b0014;
+      border-color: #d3a7fd;
+    }
+    .skill-icon-large {
+      font-size: 3.2rem;
+      color: #d3a7fd;
+      margin-bottom: 0.75rem;
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: #d3a7fd !important;
+      background: rgba(20, 2, 30, 0.7);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      backdrop-filter: blur(4px);
+    }
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+      font-size: 1.2rem !important;
+      font-weight: bold;
+    }
+    .swiper-pagination-bullet {
+      background: #a45de0 !important;
+      opacity: 0.4;
+    }
+    .swiper-pagination-bullet-active {
+      background: #d3a7fd !important;
+      opacity: 1;
+    }
+    .contact-footer {
+      background: rgba(30, 5, 45, 0.6);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(211, 167, 253, 0.3);
+      border-radius: 28px;
+      padding: 2.2rem;
+    }
+    .contact-item h5 {
+      color: #d3a7fd;
+      font-weight: 600;
+    }
+    .contact-item a,
+    .contact-item p {
+      color: #c8a2e0;
+      text-decoration: none;
+    }
+    .contact-item a:hover {
+      color: #f0e2ff;
+    }
+    .about-profile {
+      background: rgba(30, 5, 45, 0.6);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(211, 167, 253, 0.3);
+      border-radius: 28px;
+    }
+    footer p {
+      color: #9f7bc4;
+    }
+    .lang-toggle {
+      background: transparent;
+      border: 1.5px solid #d3a7fd;
+      color: #d3a7fd;
+      border-radius: 40px;
+      padding: 0.3rem 1.1rem;
+      font-weight: 600;
+      font-size: 0.85rem;
+      transition: 0.2s;
+      margin-left: 1rem;
+      white-space: nowrap;
+    }
+    .lang-toggle:hover {
+      background: #d3a7fd;
+      color: #0b0014;
+    }
+    @media (max-width: 992px) {
+      .lang-toggle {
+        margin-left: 0;
+        margin-top: 0.5rem;
+        width: fit-content;
+      }
+    }
+  </style>
 </head>
-
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-custom shadow-sm sticky-top">
-        <div class="container">
-            <a class="navbar-brand navbar-brand-custom fw-bold fs-4" href="#">Portfolio van Jessika</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#portfolioNavbar"
-                aria-controls="portfolioNavbar" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="portfolioNavbar">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-custom active fs-6" href="#aboutme-section">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-custom fs-6" href="#projects-section">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-custom fs-6" href="#skills-section">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-custom fs-6" href="#contacts-section">Contacts</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-custom fs-6" href="#about-portfolio">About this portfolio</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <div class="container" id="aboutme-section"></div>
-    <br><br>
-
-    <br><br>
-    <div class="hero-section text-center">
-        <h1 class="display-5 fw-bold mb-3 hero-title">Welcome to My Portfolio</h1>
-        <p class="lead mb-0 hero-subtitle"><strong>Developer | Writer | Artist</strong></p>
+<nav class="navbar navbar-expand-lg navbar-custom shadow-sm sticky-top">
+  <div class="container">
+    <a class="navbar-brand navbar-brand-custom fw-bold fs-4" href="#" data-i18n="brand">Portfolio van Jessika</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#portfolioNavbar"
+      aria-controls="portfolioNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="portfolioNavbar">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3 align-items-lg-center">
+        <li class="nav-item"><a class="nav-link nav-link-custom active fs-6" href="#aboutme-section" data-i18n="navAbout">About Me</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-custom fs-6" href="#projects-section" data-i18n="navProjects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-custom fs-6" href="#skills-section" data-i18n="navSkills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-custom fs-6" href="#contacts-section" data-i18n="navContacts">Contacts</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-custom fs-6" href="#about-portfolio" data-i18n="navAboutPortfolio">About this portfolio</a></li>
+        <li class="nav-item"><button class="lang-toggle" id="langToggle" data-i18n="langButton">NL</button></li>
+      </ul>
     </div>
+  </div>
+</nav>
 
+<div class="container" id="aboutme-section"></div>
+<br><br>
 
-    <div class="container my-5">
-        <div class="row justify-content-center">
-            <div class="col-lg-10">
-                <div class="about-card">
-                    <h2 class="section-title mb-4 fs-2">About Me</h2>
-                    <div class="about-text">
-                        <p><strong>Hello! I'm Jessika</strong> – an 18-year-old software developer student at
-                            <strong>ROC Mondriaan</strong>.
-                        </p>
-                        <p><strong>My journey:</strong> I started coding in 2020 during the lockdown, but paused
-                            due to time constraints. I picked it up again in 2024 due to fun ways of learning.</p>
-                        <p><strong>Currently learning:</strong> HTML/CSS, JavaScript, PHP and C#.</p>
-                        <p><strong>Goal:</strong> Publish a game before I finish my studies, even if it is just a
-                            demo on itch.io.</p>
-                        <p><strong>Outside coding:</strong> I love reading and writing stories. I also enjoy making
-                            art of any medium.</p>
-                    </div>
-                </div>
-            </div>
+<div class="hero-section text-center">
+  <h1 class="display-5 fw-bold mb-3 hero-title" data-i18n="heroTitle">Welcome to My Portfolio</h1>
+  <p class="lead mb-0 hero-subtitle"><strong data-i18n="heroSubtitle">Developer | Writer | Artist</strong></p>
+</div>
+
+<div class="container my-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-10">
+      <div class="about-card">
+        <h2 class="section-title mb-4 fs-2" data-i18n="aboutTitle">About Me</h2>
+        <div class="about-text">
+          <p data-i18n="aboutP1"><strong>Hello! I'm Jessika</strong> – an 19-year-old software developer student at <strong>ROC Mondriaan</strong>.</p>
+          <p data-i18n="aboutP2"><strong>My journey:</strong> I started coding in 2020 during the lockdown, but paused due to time constraints. I picked it up again in 2024 due to fun ways of learning.</p>
+          <p data-i18n="aboutP3"><strong>Currently learning:</strong> HTML/CSS, JavaScript, PHP and C#.</p>
+          <p data-i18n="aboutP4"><strong>Goal:</strong> Publish a game before I finish my studies, even if it is just a demo on itch.io.</p>
+          <p data-i18n="aboutP5"><strong>Outside coding:</strong> I love reading and writing stories. I also enjoy making art of any medium.</p>
         </div>
+      </div>
     </div>
+  </div>
+</div>
 
-    <div class="container" id="projects-section"></div>
-    <br><br>
+<div class="container" id="projects-section"></div>
+<br><br>
 
-    <div class=" my-5">
-        <div class="text-center mb-4">
-            <h2 class="section-title fs-2" style="display: inline-block;">My Projects</h2>
-        </div>
+<div class="my-5">
+  <div class="text-center mb-4">
+    <h2 class="section-title fs-2" style="display: inline-block;" data-i18n="projectsTitle">My Projects</h2>
+  </div>
 
-        <div class="swiper projectSwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="sliding-card">
-                        <img src="img/image.png" class="card-img-top-slider" alt="Cookie Run Kingdom Quiz">
-                        <div class="sliding-card-body">
-                            <h3 class="sliding-card-title">Cookie Run: Kingdom Quiz</h3>
-                            <div class="timeline-slider">
-                                <i class="far fa-calendar-alt"></i> <span>Timeline: 14-09-2025 to 07-11-2025</span>
-                            </div>
-                            <div class="mb-2">
-                                <span class="tech-tag-slider">HTML</span>
-                                <span class="tech-tag-slider">CSS</span>
-                                <span class="tech-tag-slider">JavaScript</span>
-                            </div>
-                            <p class="desc-slider">An interactive quiz built during my first year of study, testing
-                                players' knowledge about the mobile game.</p>
-                            <a href="https://github.com/Nicolle-Valovicova/p01-project" target="_blank"
-                                class="btn-slider-custom"><i class="fab fa-github me-1"></i> GitHub</a>
-                            <a href="P01/index.html" target="_blank" class="btn-slider-custom">
-                                <i class="fab me-1"></i> Link to Project
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="sliding-card">
-                        <img src="img/image2.png" class="card-img-top-slider" alt="Game Maker's Realm">
-                        <div class="sliding-card-body">
-                            <h3 class="sliding-card-title">THE GAME MAKER'S REALM</h3>
-                            <div class="timeline-slider">
-                                <i class="far fa-calendar-alt"></i> <span>Timeline: 17-11-2025 to 28-01-2026</span>
-                            </div>
-                            <div class="mb-2">
-                                <span class="tech-tag-slider">HTML</span>
-                                <span class="tech-tag-slider">CSS</span>
-                                <span class="tech-tag-slider">JavaScript</span>
-                            </div>
-                            <p class="desc-slider">A creative web-based game project exploring interactive mechanics
-                                and narrative-driven design.</p>
-                            <a href="https://github.com/Nicolle-Valovicova/Project-p2-Game" target="_blank"
-                                class="btn-slider-custom"><i class="fab fa-github me-1"></i> GitHub</a>
-                            <a href="P02/home.html" target="_blank" class="btn-slider-custom"><i class="fab me-1"></i>
-                                Link to Project</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="sliding-card">
-                        <img src="img/image3.png" class="card-img-top-slider" alt="Mon-in">
-                        <div class="sliding-card-body">
-                            <h3 class="sliding-card-title">Mon-in</h3>
-                            <div class="timeline-slider">
-                                <i class="far fa-calendar-alt"></i> <span>Timeline: 16-02-2026 to 12-04-2026</span>
-                            </div>
-                            <div class="mb-2">
-                                <span class="tech-tag-slider">PHP</span>
-                                <span class="tech-tag-slider">Bootstrap</span>
-                            </div>
-                            <p class="desc-slider">A LinkedIn lookalike website built with PHP and Bootstrap.</p>
-                            <a href="https://github.com/ROCMondriaanTIN/sd25-p03-proj-mon-in-jessika-iliyana"
-                                target="_blank" class="btn-slider-custom"><i class="fab fa-github me-1"></i> GitHub</a>
-                            <a href="#" target="_blank" class="btn-slider-custom">
-                                <i class="fab me-1"></i> No live link available because of XAMPP
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="sliding-card">
-                        <img src="img/image4.png" class="card-img-top-slider" alt="Story Project">
-                        <div class="sliding-card-body">
-                            <h3 class="sliding-card-title">Basic Unity platformer</h3>
-                            <div class="timeline-slider">
-                                <i class="far fa-calendar-alt"></i> <span>Timeline: 23-03-2026 to 08-04-2026 </span>
-                            </div>
-                            <div class="mb-2">
-                                <span class="tech-tag-slider">C#</span>
-                                <span class="tech-tag-slider">Unity</span>
-                            </div>
-                            <p class="desc-slider">A simple platformer game built with Unity and C#. And some
-                                tutorials for other engines</p>
-                            <a href="https://github.com/ROCMondriaanTIN/sd25-kdlgp-p03-prototype-J-302673817?classId=7091f96c-4517-4099-a457-41fc0575079f&assignmentId=c4975c7d-e2ac-4628-aa2e-72ddb0d23507&submissionId=583b08e6-87e7-3cee-389f-9adf7a3dc9c2"
-                                target="_blank" class="btn-slider-custom"><i class="fab fa-github me-1"></i> GitHub</a>
-                            <a href="#" target="_blank" class="btn-slider-custom">
-                                <i class="fab me-1"></i> No live link available because of Unity
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="sliding-card">
-                        <img src="img/image5.png" class="card-img-top-slider" alt="Story Project">
-                        <div class="sliding-card-body">
-                            <h3 class="sliding-card-title">MyCollectables</h3>
-                            <div class="timeline-slider">
-                                <i class="far fa-calendar-alt"></i> <span>Timeline: 13-05-2026 to 06-06-2026 </span>
-                            </div>
-                            <div class="mb-2">
-                                <span class="tech-tag-slider">PHP</span>
-                                <span class="tech-tag-slider">Bootstrap</span>
-                            </div>
-                            <p class="desc-slider">A simple collection management website built with PHP and Bootstrap.
-                            </p>
-                            <a href="https://github.com/ROCMondriaanTIN/sd25-project-p04-collectables-jessika-iliyana-1"
-                                target="_blank" class="btn-slider-custom"><i class="fab fa-github me-1"></i> GitHub</a>
-                            <a href="#" target="_blank" class="btn-slider-custom">
-                                <i class="fab me-1"></i> No live link available because of XAMPP
-                            </a>
-                        </div>
-                    </div>
-                </div>
+  <div class="swiper projectSwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="sliding-card">
+          <img src="img/image.png" class="card-img-top-slider" alt="Cookie Run Kingdom Quiz">
+          <div class="sliding-card-body">
+            <h3 class="sliding-card-title" data-i18n="proj1Title">Cookie Run: Kingdom Quiz</h3>
+            <div class="timeline-slider"><i class="far fa-calendar-alt"></i> <span data-i18n="proj1Timeline">Timeline: 14-09-2025 to 07-11-2025</span></div>
+            <div class="mb-2">
+              <span class="tech-tag-slider">HTML</span>
+              <span class="tech-tag-slider">CSS</span>
+              <span class="tech-tag-slider">JavaScript</span>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
+            <p class="desc-slider" data-i18n="proj1Desc">An interactive quiz built during my first year of study, testing players' knowledge about the mobile game.</p>
+            <a href="https://github.com/Nicolle-Valovicova/p01-project" target="_blank" class="btn-slider-custom"><i class="fab fa-github me-1"></i> <span data-i18n="githubBtn">GitHub</span></a>
+            <a href="P01/index.html" target="_blank" class="btn-slider-custom"><i class="fab me-1"></i> <span data-i18n="linkProjectBtn">Link to Project</span></a>
+          </div>
         </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="sliding-card">
+          <img src="img/image2.png" class="card-img-top-slider" alt="Game Maker's Realm">
+          <div class="sliding-card-body">
+            <h3 class="sliding-card-title" data-i18n="proj2Title">THE GAME MAKER'S REALM</h3>
+            <div class="timeline-slider"><i class="far fa-calendar-alt"></i> <span data-i18n="proj2Timeline">Timeline: 17-11-2025 to 28-01-2026</span></div>
+            <div class="mb-2">
+              <span class="tech-tag-slider">HTML</span>
+              <span class="tech-tag-slider">CSS</span>
+              <span class="tech-tag-slider">JavaScript</span>
+            </div>
+            <p class="desc-slider" data-i18n="proj2Desc">A creative web-based game project exploring interactive mechanics and narrative-driven design.</p>
+            <a href="https://github.com/Nicolle-Valovicova/Project-p2-Game" target="_blank" class="btn-slider-custom"><i class="fab fa-github me-1"></i> <span data-i18n="githubBtn">GitHub</span></a>
+            <a href="P02/home.html" target="_blank" class="btn-slider-custom"><i class="fab me-1"></i> <span data-i18n="linkProjectBtn">Link to Project</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="sliding-card">
+          <img src="img/image3.png" class="card-img-top-slider" alt="Mon-in">
+          <div class="sliding-card-body">
+            <h3 class="sliding-card-title" data-i18n="proj3Title">Mon-in</h3>
+            <div class="timeline-slider"><i class="far fa-calendar-alt"></i> <span data-i18n="proj3Timeline">Timeline: 16-02-2026 to 12-04-2026</span></div>
+            <div class="mb-2">
+              <span class="tech-tag-slider">PHP</span>
+              <span class="tech-tag-slider">Bootstrap</span>
+            </div>
+            <p class="desc-slider" data-i18n="proj3Desc">A LinkedIn lookalike website built with PHP and Bootstrap.</p>
+            <a href="https://github.com/ROCMondriaanTIN/sd25-p03-proj-mon-in-jessika-iliyana" target="_blank" class="btn-slider-custom"><i class="fab fa-github me-1"></i> <span data-i18n="githubBtn">GitHub</span></a>
+            <a href="#" target="_blank" class="btn-slider-custom"><i class="fab me-1"></i> <span data-i18n="noLiveXampp">No live link available because of XAMPP</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="sliding-card">
+          <img src="img/image4.png" class="card-img-top-slider" alt="Basic Unity platformer">
+          <div class="sliding-card-body">
+            <h3 class="sliding-card-title" data-i18n="proj4Title">Basic Unity platformer</h3>
+            <div class="timeline-slider"><i class="far fa-calendar-alt"></i> <span data-i18n="proj4Timeline">Timeline: 23-03-2026 to 08-04-2026</span></div>
+            <div class="mb-2">
+              <span class="tech-tag-slider">C#</span>
+              <span class="tech-tag-slider">Unity</span>
+            </div>
+            <p class="desc-slider" data-i18n="proj4Desc">A simple platformer game built with Unity and C#. And some tutorials for other engines</p>
+            <a href="https://github.com/ROCMondriaanTIN/sd25-kdlgp-p03-prototype-J-302673817?classId=7091f96c-4517-4099-a457-41fc0575079f&assignmentId=c4975c7d-e2ac-4628-aa2e-72ddb0d23507&submissionId=583b08e6-87e7-3cee-389f-9adf7a3dc9c2" target="_blank" class="btn-slider-custom"><i class="fab fa-github me-1"></i> <span data-i18n="githubBtn">GitHub</span></a>
+            <a href="#" target="_blank" class="btn-slider-custom"><i class="fab me-1"></i> <span data-i18n="noLiveUnity">No live link available because of Unity</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="sliding-card">
+          <img src="img/image5.png" class="card-img-top-slider" alt="MyCollectables">
+          <div class="sliding-card-body">
+            <h3 class="sliding-card-title" data-i18n="proj5Title">MyCollectables</h3>
+            <div class="timeline-slider"><i class="far fa-calendar-alt"></i> <span data-i18n="proj5Timeline">Timeline: 13-05-2026 to 06-06-2026</span></div>
+            <div class="mb-2">
+              <span class="tech-tag-slider">PHP</span>
+              <span class="tech-tag-slider">Bootstrap</span>
+            </div>
+            <p class="desc-slider" data-i18n="proj5Desc">A simple collection management website built with PHP and Bootstrap.</p>
+            <a href="https://github.com/ROCMondriaanTIN/sd25-project-p04-collectables-jessika-iliyana-1" target="_blank" class="btn-slider-custom"><i class="fab fa-github me-1"></i> <span data-i18n="githubBtn">GitHub</span></a>
+            <a href="#" target="_blank" class="btn-slider-custom"><i class="fab me-1"></i> <span data-i18n="noLiveXampp">No live link available because of XAMPP</span></a>
+          </div>
+        </div>
+      </div>
     </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
+<br><br>
+
+<div class="container" id="skills-section"></div>
+<br><br>
+
+<div class="container">
+  <div class="my-5">
+    <div class="text-center mb-4">
+      <h2 class="section-title fs-2" style="display: inline-block;" data-i18n="skillsTitle">My Skills</h2>
     </div>
-    <br><br>
-
-    <div class="container" id="skills-section"></div>
-    <br><br>
-    <div class="container">
-        <div class="my-5">
-            <div class="text-center mb-4">
-                <h2 class="section-title fs-2" style="display: inline-block;">My Skills</h2>
+    <div class="swiper skillsSwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="sliding-card text-center">
+            <div class="sliding-card-body">
+              <i class="fab fa-html5 skill-icon-large"></i>
+              <h3 class="sliding-card-title" data-i18n="skill1Title">Basic HTML</h3>
+              <p class="desc-slider" data-i18n="skill1Desc">Building responsive and structured websites with clean HTML5 markup.</p>
             </div>
-
-            <div class="swiper skillsSwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="sliding-card text-center">
-                            <div class="sliding-card-body">
-                                <i class="fab fa-html5 skill-icon-large"></i>
-                                <h3 class="sliding-card-title">Basic HTML</h3>
-                                <p class="desc-slider">Building responsive and structured websites with clean HTML5
-                                    markup.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="sliding-card text-center">
-                            <div class="sliding-card-body">
-                                <i class="fab fa-css3-alt skill-icon-large"></i>
-                                <h3 class="sliding-card-title">Basic CSS</h3>
-                                <p class="desc-slider">Styling and layout, creating modern and visually appealing
-                                    interfaces.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="sliding-card text-center">
-                            <div class="sliding-card-body">
-                                <i class="fab fa-js-square skill-icon-large"></i>
-                                <h3 class="sliding-card-title">Basic JavaScript</h3>
-                                <p class="desc-slider">Interactive web functionality, dynamic content and game logic.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="sliding-card text-center">
-                            <div class="sliding-card-body">
-                                <i class="fab fa-git-alt skill-icon-large"></i>
-                                <h3 class="sliding-card-title">Git & GitHub</h3>
-                                <p class="desc-slider">Managing repositories, commits and team workflows efficiently.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="sliding-card text-center">
-                            <div class="sliding-card-body">
-                                <i class="fab fa-php skill-icon-large"></i>
-                                <h3 class="sliding-card-title">PHP Basics</h3>
-                                <p class="desc-slider">Server-side scripting and dynamic web applications.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="sliding-card text-center">
-                            <div class="sliding-card-body">
-                                <i class="fas fa-gamepad skill-icon-large"></i>
-                                <h3 class="sliding-card-title">C# & Unity</h3>
-
-                                <p class="desc-slider">Exploring C# for game mechanics, aiming to publish a demo.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
-            </div>
+          </div>
         </div>
+        <div class="swiper-slide">
+          <div class="sliding-card text-center">
+            <div class="sliding-card-body">
+              <i class="fab fa-css3-alt skill-icon-large"></i>
+              <h3 class="sliding-card-title" data-i18n="skill2Title">Basic CSS</h3>
+              <p class="desc-slider" data-i18n="skill2Desc">Styling and layout, creating modern and visually appealing interfaces.</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="sliding-card text-center">
+            <div class="sliding-card-body">
+              <i class="fab fa-js-square skill-icon-large"></i>
+              <h3 class="sliding-card-title" data-i18n="skill3Title">Basic JavaScript</h3>
+              <p class="desc-slider" data-i18n="skill3Desc">Interactive web functionality, dynamic content and game logic.</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="sliding-card text-center">
+            <div class="sliding-card-body">
+              <i class="fab fa-git-alt skill-icon-large"></i>
+              <h3 class="sliding-card-title" data-i18n="skill4Title">Git & GitHub</h3>
+              <p class="desc-slider" data-i18n="skill4Desc">Managing repositories, commits and team workflows efficiently.</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="sliding-card text-center">
+            <div class="sliding-card-body">
+              <i class="fab fa-php skill-icon-large"></i>
+              <h3 class="sliding-card-title" data-i18n="skill5Title">PHP Basics</h3>
+              <p class="desc-slider" data-i18n="skill5Desc">Server-side scripting and dynamic web applications.</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="sliding-card text-center">
+            <div class="sliding-card-body">
+              <i class="fas fa-gamepad skill-icon-large"></i>
+              <h3 class="sliding-card-title" data-i18n="skill6Title">C# & Unity</h3>
+              <p class="desc-slider" data-i18n="skill6Desc">Exploring C# for game mechanics, aiming to publish a demo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
     </div>
+  </div>
+</div>
 
-    <br><br>
-    <div class="container" id="contacts-section">
-        <br><br>
-        <div class="contact-footer">
-            <h2 class="section-title mb-4 fs-2">Contacts</h2>
+<br><br>
 
-            <div class="row g-4">
-                <div class="col-sm-6 col-md-4 contact-item">
-                    <h5>Email</h5>
-                    <p>jessika.wieczorek02@gmail.com</p>
-                </div>
-                <div class="col-sm-6 col-md-4 contact-item">
-                    <h5>GitHub</h5>
-                    <a href="https://github.com/J-302673817" target="_blank">Github.com/J-302673817</a>
-                </div>
-                <div class="col-sm-6 col-md-4 contact-item">
-                    <h5>WhatsApp</h5>
-                    <p>0653146077</p>
-                </div>
-            </div>
+<div class="container" id="contacts-section">
+  <br><br>
+  <div class="contact-footer">
+    <h2 class="section-title mb-4 fs-2" data-i18n="contactsTitle">Contacts</h2>
+    <div class="row g-4">
+      <div class="col-sm-6 col-md-4 contact-item">
+        <h5 data-i18n="contactEmailLabel">Email</h5>
+        <p>jessika.wieczorek02@gmail.com</p>
+      </div>
+      <div class="col-sm-6 col-md-4 contact-item">
+        <h5 data-i18n="contactGithubLabel">GitHub</h5>
+        <a href="https://github.com/J-302673817" target="_blank">Github.com/J-302673817</a>
+      </div>
+      <div class="col-sm-6 col-md-4 contact-item">
+        <h5 data-i18n="contactWhatsappLabel">WhatsApp</h5>
+        <p>0653146077</p>
+      </div>
+    </div>
+  </div>
+  <br><br><br><br><br><br><br>
+  <div class="container" id="about-portfolio"></div>
+  <section class="container my-5">
+    <div class="about-profile">
+      <div class="p-4" style="color: #d3a7fd;">
+        <h2 class="section-title" data-i18n="aboutPortfolioTitle">About this portfolio website</h2>
+        <p data-i18n="aboutPortfolioText">This portfolio is built with HTML5, CSS, JavaScript and Bootstrap 5.</p>
+        <h4 data-i18n="colorSchemaTitle">Color Schema</h4>
+        <div class="d-flex gap-2">
+          <div style="background:#4a0160; width:50px; height:50px;"></div>
+          <div style="background:#d3a7fd; width:50px; height:50px;"></div>
+          <div style="background:#e4c8fe; width:50px; height:50px;"></div>
         </div>
-        <br><br><br><br><br><br><br>
-        <div class="container" id="about-portfolio"></div>
-        <section class="container my-5">
-            <div class="about-profile">
-                <div class=" p-4 " style="color: #d3a7fd;">
-                    <h2 class="section-title">About this portfolio website</h2>
-                    <p>This portfolio is built with HTML5, CSS, JavaScript and Bootstrap 5.</p>
-                    <h4>Color Schema</h4>
-                    <div class="d-flex gap-2">
-                        <div style="background:#4a0160; width:50px; height:50px;"></div>
-                        <div style="background:#d3a7fd; width:50px; height:50px;"></div>
-                        <div style="background:#e4c8fe; width:50px; height:50px;"></div>
-                    </div>
+        <h4 data-i18n="designStylesTitle">Design Styles:</h4>
+        <ul style="color:#d3a7fd;">
+          <li data-i18n="designStyle1"><strong>Dark Mode Aesthetic</strong> - Deep purple tones with soft contrast</li>
+          <li data-i18n="designStyle2"><strong>Soft Glassmorphism</strong> - Transparent elements with subtle borders</li>
+          <li data-i18n="designStyle3"><strong>Mystical Tech</strong> - Combining dark themes with ethereal purple accents</li>
+          <li data-i18n="designStyle4"><strong>Neumorphism-light</strong> - Soft shadows and rounded elements without harsh edges</li>
+        </ul>
+        <h4 data-i18n="visualReferencesTitle">Visual References:</h4>
+        <p data-i18n="visualReferencesText">Witchy UI, Dreamcore aesthetic, Purple haze style, Ethereal dark mode</p>
+        <h4 data-i18n="sitemapTitle">Sitemap</h4>
+        <p data-i18n="sitemapText">Home → About → Projects → Skills → Contact → Over deze portfolio</p>
+      </div>
+    </div>
+    <footer class="mt-4 text-center">
+      <p data-i18n="footerText">&copy; 2026 Jessika. All rights reserved. | ROC Mondriaan Software Developer Student</p>
+    </footer>
+  </section>
+</div>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  const translations = {
+    en: {
+      brand: "Portfolio van Jessika",
+      navAbout: "About Me",
+      navProjects: "Projects",
+      navSkills: "Skills",
+      navContacts: "Contacts",
+      navAboutPortfolio: "About this portfolio",
+      langButton: "NL",
+      heroTitle: "Welcome to My Portfolio",
+      heroSubtitle: "Developer | Writer | Artist",
+      aboutTitle: "About Me",
+      aboutP1: "<strong>Hello! I'm Jessika</strong> – an 19-year-old software developer student at <strong>ROC Mondriaan</strong>.",
+      aboutP2: "<strong>My journey:</strong> I started coding in 2020 during the lockdown, but paused due to time constraints. I picked it up again in 2024 due to fun ways of learning.",
+      aboutP3: "<strong>Currently learning:</strong> HTML/CSS, JavaScript, PHP and C#.",
+      aboutP4: "<strong>Goal:</strong> Publish a game before I finish my studies, even if it is just a demo on itch.io.",
+      aboutP5: "<strong>Outside coding:</strong> I love reading and writing stories. I also enjoy making art of any medium.",
+      projectsTitle: "My Projects",
+      proj1Title: "Cookie Run: Kingdom Quiz",
+      proj1Timeline: "Timeline: 14-09-2025 to 07-11-2025",
+      proj1Desc: "An interactive quiz built during my first year of study, testing players' knowledge about the mobile game.",
+      proj2Title: "THE GAME MAKER'S REALM",
+      proj2Timeline: "Timeline: 17-11-2025 to 28-01-2026",
+      proj2Desc: "A creative web-based game project exploring interactive mechanics and narrative-driven design.",
+      proj3Title: "Mon-in",
+      proj3Timeline: "Timeline: 16-02-2026 to 12-04-2026",
+      proj3Desc: "A LinkedIn lookalike website built with PHP and Bootstrap.",
+      proj4Title: "Basic Unity platformer",
+      proj4Timeline: "Timeline: 23-03-2026 to 08-04-2026",
+      proj4Desc: "A simple platformer game built with Unity and C#. And some tutorials for other engines",
+      proj5Title: "MyCollectables",
+      proj5Timeline: "Timeline: 13-05-2026 to 06-06-2026",
+      proj5Desc: "A simple collection management website built with PHP and Bootstrap.",
+      githubBtn: "GitHub",
+      linkProjectBtn: "Link to Project",
+      noLiveXampp: "No live link available because of XAMPP",
+      noLiveUnity: "No live link available because of Unity",
+      skillsTitle: "My Skills",
+      skill1Title: "Basic HTML",
+      skill1Desc: "Building responsive and structured websites with clean HTML5 markup.",
+      skill2Title: "Basic CSS",
+      skill2Desc: "Styling and layout, creating modern and visually appealing interfaces.",
+      skill3Title: "Basic JavaScript",
+      skill3Desc: "Interactive web functionality, dynamic content and game logic.",
+      skill4Title: "Git & GitHub",
+      skill4Desc: "Managing repositories, commits and team workflows efficiently.",
+      skill5Title: "PHP Basics",
+      skill5Desc: "Server-side scripting and dynamic web applications.",
+      skill6Title: "C# & Unity",
+      skill6Desc: "Exploring C# for game mechanics, aiming to publish a demo.",
+      contactsTitle: "Contacts",
+      contactEmailLabel: "Email",
+      contactGithubLabel: "GitHub",
+      contactWhatsappLabel: "WhatsApp",
+      aboutPortfolioTitle: "About this portfolio website",
+      aboutPortfolioText: "This portfolio is built with HTML5, CSS, JavaScript and Bootstrap 5.",
+      colorSchemaTitle: "Color Schema",
+      designStylesTitle: "Design Styles:",
+      designStyle1: "<strong>Dark Mode Aesthetic</strong> - Deep purple tones with soft contrast",
+      designStyle2: "<strong>Soft Glassmorphism</strong> - Transparent elements with subtle borders",
+      designStyle3: "<strong>Mystical Tech</strong> - Combining dark themes with ethereal purple accents",
+      designStyle4: "<strong>Neumorphism-light</strong> - Soft shadows and rounded elements without harsh edges",
+      visualReferencesTitle: "Visual References:",
+      visualReferencesText: "Witchy UI, Dreamcore aesthetic, Purple haze style, Ethereal dark mode",
+      sitemapTitle: "Sitemap",
+      sitemapText: "Home → About → Projects → Skills → Contact → Over deze portfolio",
+      footerText: "&copy; 2026 Jessika. All rights reserved. | ROC Mondriaan Software Developer Student"
+    },
+    nl: {
+      brand: "Portfolio van Jessika",
+      navAbout: "Over Mij",
+      navProjects: "Projecten",
+      navSkills: "Vaardigheden",
+      navContacts: "Contact",
+      navAboutPortfolio: "Over dit portfolio",
+      langButton: "EN",
+      heroTitle: "Welkom op Mijn Portfolio",
+      heroSubtitle: "Developer | Schrijver | Artiest",
+      aboutTitle: "Over Mij",
+      aboutP1: "<strong>Hallo! Ik ben Jessika</strong> – een 19-jarige software development student aan <strong>ROC Mondriaan</strong>.",
+      aboutP2: "<strong>Mijn reis:</strong> Ik begon met coderen in 2020 tijdens de lockdown, maar stopte vanwege tijdgebrek. In 2024 pakte ik het weer op door leuke manieren van leren.",
+      aboutP3: "<strong>Momenteel aan het leren:</strong> HTML/CSS, JavaScript, PHP en C#.",
+      aboutP4: "<strong>Doel:</strong> Een game publiceren voordat ik mijn studie afrond, al is het maar een demo op itch.io.",
+      aboutP5: "<strong>Buiten coderen:</strong> Ik hou van lezen en verhalen schrijven. Ik maak ook graag kunst in welke vorm dan ook.",
+      projectsTitle: "Mijn Projecten",
+      proj1Title: "Cookie Run: Kingdom Quiz",
+      proj1Timeline: "Tijdlijn: 14-09-2025 tot 07-11-2025",
+      proj1Desc: "Een interactieve quiz gemaakt tijdens mijn eerste studiejaar, waarin spelers hun kennis over de mobiele game testen.",
+      proj2Title: "THE GAME MAKER'S REALM",
+      proj2Timeline: "Tijdlijn: 17-11-2025 tot 28-01-2026",
+      proj2Desc: "Een creatief web-based gameproject dat interactieve mechanics en narratief ontwerp verkent.",
+      proj3Title: "Mon-in",
+      proj3Timeline: "Tijdlijn: 16-02-2026 tot 12-04-2026",
+      proj3Desc: "Een LinkedIn-lookalike website gebouwd met PHP en Bootstrap.",
+      proj4Title: "Eenvoudige Unity platformer",
+      proj4Timeline: "Tijdlijn: 23-03-2026 tot 08-04-2026",
+      proj4Desc: "Een eenvoudige platformgame gebouwd met Unity en C#. En wat tutorials voor andere engines.",
+      proj5Title: "MyCollectables",
+      proj5Timeline: "Tijdlijn: 13-05-2026 tot 06-06-2026",
+      proj5Desc: "Een eenvoudige verzamelbeheerwebsite gebouwd met PHP en Bootstrap.",
+      githubBtn: "GitHub",
+      linkProjectBtn: "Link naar Project",
+      noLiveXampp: "Geen live link beschikbaar vanwege XAMPP",
+      noLiveUnity: "Geen live link beschikbaar vanwege Unity",
+      skillsTitle: "Mijn Vaardigheden",
+      skill1Title: "Basis HTML",
+      skill1Desc: "Het bouwen van responsieve en gestructureerde websites met schone HTML5-markup.",
+      skill2Title: "Basis CSS",
+      skill2Desc: "Styling en layout, het creëren van moderne en visueel aantrekkelijke interfaces.",
+      skill3Title: "Basis JavaScript",
+      skill3Desc: "Interactieve webfunctionaliteit, dynamische content en game-logica.",
+      skill4Title: "Git & GitHub",
+      skill4Desc: "Het efficiënt beheren van repositories, commits en teamworkflows.",
+      skill5Title: "PHP Basis",
+      skill5Desc: "Server-side scripting en dynamische webapplicaties.",
+      skill6Title: "C# & Unity",
+      skill6Desc: "C# verkennen voor game-mechanics, met als doel een demo te publiceren.",
+      contactsTitle: "Contact",
+      contactEmailLabel: "E-mail",
+      contactGithubLabel: "GitHub",
+      contactWhatsappLabel: "WhatsApp",
+      aboutPortfolioTitle: "Over deze portfolio website",
+      aboutPortfolioText: "Deze portfolio is gebouwd met HTML5, CSS, JavaScript en Bootstrap 5.",
+      colorSchemaTitle: "Kleurschema",
+      designStylesTitle: "Designstijlen:",
+      designStyle1: "<strong>Dark Mode Aesthetic</strong> - Diepe paarse tinten met zacht contrast",
+      designStyle2: "<strong>Soft Glassmorphism</strong> - Transparante elementen met subtiele randen",
+      designStyle3: "<strong>Mystical Tech</strong> - Donkere thema's combineren met etherische paarse accenten",
+      designStyle4: "<strong>Neumorphism-light</strong> - Zachte schaduwen en ronde elementen zonder harde randen",
+      visualReferencesTitle: "Visuele Referenties:",
+      visualReferencesText: "Witchy UI, Dreamcore esthetiek, Purple haze stijl, Etherische dark mode",
+      sitemapTitle: "Sitemap",
+      sitemapText: "Home → Over → Projecten → Vaardigheden → Contact → Over deze portfolio",
+      footerText: "&copy; 2026 Jessika. Alle rechten voorbehouden. | ROC Mondriaan Software Developer Student"
+    }
+  };
 
-                    <h4>Design Styles:</h4>
-                    <ul style="color:#d3a7fd;">
-                        <li><strong>Dark Mode Aesthetic</strong> - Deep purple tones with soft contrast</li>
-                        <li><strong>Soft Glassmorphism</strong> - Transparent elements with subtle borders</li>
-                        <li><strong>Mystical Tech</strong> - Combining dark themes with ethereal purple accents</li>
-                        <li><strong>Neumorphism-light</strong> - Soft shadows and rounded elements without harsh edges
-                        </li>
-                    </ul>
+  let currentLang = 'en';
 
-                    <h4>Visual References:</h4>
-                    <p>Witchy UI, Dreamcore aesthetic, Purple haze style, Ethereal dark mode</p>
+  function setLanguage(lang) {
+    currentLang = lang;
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (translations[lang] && translations[lang][key] !== undefined) {
+        el.innerHTML = translations[lang][key];
+      }
+    });
+    document.documentElement.lang = lang;
+    const toggle = document.getElementById('langToggle');
+    if (toggle) toggle.textContent = translations[lang].langButton;
+    localStorage.setItem('portfolioLang', lang);
+  }
 
-                    <h4>Sitemap</h4>
-                    <p>Home → About → Projects → Skills → Contact → Over deze portfolio</p>
-                </div>
-            </div>
-            <footer class="mt-4 text-center">
-                <p>&copy; 2026 Jessika. All rights reserved. | ROC Mondriaan Software Developer Student</p>
-            </footer>
-        </section>
+  document.getElementById('langToggle').addEventListener('click', () => {
+    setLanguage(currentLang === 'en' ? 'nl' : 'en');
+  });
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <script>
-            const projectSwiper = new Swiper('.projectSwiper', {
-                slidesPerView: 1,
-                spaceBetween: 24,
-                loop: true,
-                autoplay: {
-                    delay: 4500,
-                    disableOnInteraction: false,
-                    pauseOnMouseEnter: true,
-                },
-                pagination: {
-                    el: '.projectSwiper .swiper-pagination',
-                    clickable: true,
-                },
-                navigation: {
-                    nextEl: '.projectSwiper .swiper-button-next',
-                    prevEl: '.projectSwiper .swiper-button-prev',
-                },
-                breakpoints: {
-                    640: { slidesPerView: 1, spaceBetween: 20 },
-                    768: { slidesPerView: 2, spaceBetween: 25 },
-                    1024: { slidesPerView: 3, spaceBetween: 30 },
-                },
-                grabCursor: true,
-                speed: 700,
-            });
+  const savedLang = localStorage.getItem('portfolioLang');
+  if (savedLang && (savedLang === 'en' || savedLang === 'nl')) {
+    setLanguage(savedLang);
+  } else {
+    setLanguage('en');
+  }
 
-            const skillsSwiper = new Swiper('.skillsSwiper', {
-                slidesPerView: 1,
-                spaceBetween: 24,
-                loop: true,
-                autoplay: {
-                    delay: 4000,
-                    disableOnInteraction: false,
-                    pauseOnMouseEnter: true,
-                },
-                pagination: {
-                    el: '.skillsSwiper .swiper-pagination',
-                    clickable: true,
-                },
-                navigation: {
-                    nextEl: '.skillsSwiper .swiper-button-next',
-                    prevEl: '.skillsSwiper .swiper-button-prev',
-                },
-                breakpoints: {
-                    640: { slidesPerView: 1, spaceBetween: 20 },
-                    768: { slidesPerView: 2, spaceBetween: 25 },
-                    1024: { slidesPerView: 3, spaceBetween: 30 },
-                },
-                grabCursor: true,
-            });
+  const projectSwiper = new Swiper('.projectSwiper', {
+    slidesPerView: 1,
+    spaceBetween: 24,
+    loop: true,
+    autoplay: {
+      delay: 4500,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true,
+    },
+    pagination: {
+      el: '.projectSwiper .swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.projectSwiper .swiper-button-next',
+      prevEl: '.projectSwiper .swiper-button-prev',
+    },
+    breakpoints: {
+      640: { slidesPerView: 1, spaceBetween: 20 },
+      768: { slidesPerView: 2, spaceBetween: 25 },
+      1024: { slidesPerView: 3, spaceBetween: 30 },
+    },
+    grabCursor: true,
+    speed: 700,
+  });
 
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    const href = this.getAttribute('href');
-                    if (href === "#" || href === "") return;
-                    const targetElement = document.querySelector(href);
-                    if (targetElement) {
-                        e.preventDefault();
-                        targetElement.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        });
-                    }
-                });
-            });
-        </script>
+  const skillsSwiper = new Swiper('.skillsSwiper', {
+    slidesPerView: 1,
+    spaceBetween: 24,
+    loop: true,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true,
+    },
+    pagination: {
+      el: '.skillsSwiper .swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.skillsSwiper .swiper-button-next',
+      prevEl: '.skillsSwiper .swiper-button-prev',
+    },
+    breakpoints: {
+      640: { slidesPerView: 1, spaceBetween: 20 },
+      768: { slidesPerView: 2, spaceBetween: 25 },
+      1024: { slidesPerView: 3, spaceBetween: 30 },
+    },
+    grabCursor: true,
+  });
+
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      const href = this.getAttribute('href');
+      if (href === "#" || href === "") return;
+      const targetElement = document.querySelector(href);
+      if (targetElement) {
+        e.preventDefault();
+        targetElement.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    });
+  });
+</script>
 </body>
-
 </html>
